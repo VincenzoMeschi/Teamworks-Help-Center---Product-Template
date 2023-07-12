@@ -1,0 +1,136 @@
+<div class="alertbox"></div>
+<a class='skip-navigation' tabindex='1' href='#main-content'>{{t
+    'skip_navigation'
+  }}</a>
+
+<header class='header-container'>
+  <div class='header'>
+    <div class='logo'>
+      {{#link 'help_center'}}
+        <img
+          src='{{settings.logo}}'
+          alt='{{t 'home_page' name=help_center.name}}'
+        />
+        {{#if settings.show_brand_name}}
+          <span aria-hidden='true'>{{help_center.name}}</span>
+        {{/if}}
+      {{/link}}
+    </div>
+    <div class='nav-wrapper'>
+      <button
+        class='menu-button'
+        aria-controls='user-nav'
+        aria-expanded='false'
+        aria-label='{{t 'toggle_navigation'}}'
+      >
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='16'
+          height='16'
+          focusable='false'
+          viewBox='0 0 16 16'
+          class='icon-menu'
+        >
+          <path
+            fill='none'
+            stroke='currentColor'
+            stroke-linecap='round'
+            d='M1.5 3.5h13m-13 4h13m-13 4h13'
+          ></path>
+        </svg>
+      </button>
+      <nav class='user-nav' id='user-nav'>
+        {{link 'new_request' class='submit-a-request'}}
+        <a href="https://smartabase.zendesk.com/hc/en-us/articles/16738381002772">What's new?</a>
+      </nav>
+      {{#if alternative_locales}}
+        <div class='header-language-selector'>
+          <div class='dropdown language-selector'>
+            <button class='dropdown-toggle' aria-haspopup='true'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='14'
+                height='14'
+                viewBox='0 0 14 14'
+                fill='none'
+              >
+                <path
+                  fill-rule='evenodd'
+                  clip-rule='evenodd'
+                  d='M6.73119 0C3.01185 0 0 3.01861 0 6.73798C0 10.4573 3.01185 13.476 6.73119 13.476C10.4573 13.476 13.4759 10.4573 13.4759 6.73798C13.4759 3.01861 10.4573 0 6.73119 0ZM11.4006 4.04279H9.41288C9.19727 3.20054 8.88732 2.39198 8.48305 1.64407C9.72283 2.06856 10.7537 2.93102 11.4006 4.04279ZM6.73793 1.37455C7.29717 2.1831 7.73514 3.07926 8.02487 4.04279H5.45098C5.74071 3.07926 6.17868 2.1831 6.73793 1.37455ZM1.52277 8.08558C1.41496 7.65434 1.34759 7.2029 1.34759 6.73798C1.34759 6.27306 1.41496 5.82161 1.52277 5.39038H3.80019C3.74629 5.83509 3.70586 6.2798 3.70586 6.73798C3.70586 7.19616 3.74629 7.64087 3.80019 8.08558H1.52277ZM2.07528 9.43317H4.06297C4.27858 10.2754 4.58853 11.084 4.9928 11.8319C3.75302 11.4074 2.72212 10.5517 2.07528 9.43317H2.07528ZM4.06297 4.04279H2.07528C2.72212 2.92428 3.75302 2.06856 4.9928 1.64407C4.58853 2.39198 4.27858 3.20054 4.06297 4.04279H4.06297ZM6.73793 12.1014C6.17868 11.2929 5.74071 10.3967 5.45098 9.43317H8.02487C7.73514 10.3967 7.29717 11.2929 6.73793 12.1014ZM8.3146 8.08558H5.16125C5.10061 7.64087 5.05344 7.19616 5.05344 6.73798C5.05344 6.2798 5.10061 5.82835 5.16125 5.39038H8.3146C8.37524 5.82835 8.42241 6.2798 8.42241 6.73798C8.42241 7.19616 8.37524 7.64087 8.3146 8.08558ZM8.48305 11.8319C8.88732 11.084 9.19727 10.2754 9.41288 9.43317H11.4006C10.7537 10.5449 9.72283 11.4074 8.48305 11.8319ZM9.67566 8.08558C9.72956 7.64087 9.76999 7.19616 9.76999 6.73798C9.76999 6.2798 9.72956 5.83509 9.67566 5.39038H11.9531C12.0609 5.82161 12.1283 6.27306 12.1283 6.73798C12.1283 7.2029 12.0609 7.65434 11.9531 8.08558H9.67566Z'
+                  fill='{{settings.background_color}}'
+                ></path>
+              </svg>
+              <div class='hide-on-mobile'>
+                {{current_locale.name}}
+              </div>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='12'
+                height='12'
+                focusable='false'
+                viewBox='0 0 12 12'
+                class='dropdown-chevron-icon'
+              >
+                <path
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-linecap='round'
+                  d='M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5'
+                ></path>
+              </svg>
+            </button>
+            <span class='dropdown-menu dropdown-menu-end' role='menu'>
+              {{#each alternative_locales}}
+                <a
+                  href='{{url}}'
+                  dir='{{direction}}'
+                  rel='nofollow'
+                  role='menuitem'
+                >
+                  {{name}}
+                </a>
+              {{/each}}
+            </span>
+          </div>
+        </div>
+      {{/if}}
+      {{#if signed_in}}
+        <div class='user-info dropdown'>
+          <button class='dropdown-toggle' aria-haspopup='true'>
+            {{user_avatar class='user-avatar'}}
+            <span class='hide-on-mobile'>
+              {{user_name}}
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='12'
+                height='12'
+                focusable='false'
+                viewBox='0 0 12 12'
+                class='dropdown-chevron-icon'
+                aria-hidden='true'
+              >
+                <path
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-linecap='round'
+                  d='M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5'
+                ></path>
+              </svg>
+            </span>
+          </button>
+          <div class='dropdown-menu' role='menu'>
+            {{link 'my_activities' role='menuitem'}}
+            {{my_profile role='menuitem'}}
+            {{change_password role='menuitem'}}
+            {{link 'sign_out' role='menuitem'}}
+          </div>
+        </div>
+      {{else}}
+        {{#link 'sign_in' class='sign-in'}}
+          LOGIN
+        {{/link}}
+      {{/if}}
+    </div>
+  </div>
+</header>

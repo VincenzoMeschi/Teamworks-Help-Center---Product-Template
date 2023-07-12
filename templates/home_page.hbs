@@ -1,0 +1,143 @@
+<h1 class="visibility-hidden">{{ help_center.name }}</h1>
+
+<section id="main-content" class="section hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">{{ settings.homepage_title }}</h1>
+    <div class="hero-description">{{ settings.homepage_description }}</div>
+    <div class="hero-search">
+      {{search submit=false instant=settings.instant_search class='hero-search-bar' placeholder='Search our knowledge base'}}
+      <div class="hero-search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" viewBox="0 0 12 12" class="" aria-hidden="true">
+          <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
+          <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
+        </svg>
+      </div>
+    </div>
+    <div class="popular-searches">
+      <span>
+        Popular Searches:
+      </span>
+      {{#if settings.popular_search_1}}
+        <a class="popular-search-item">
+          {{settings.popular_search_1}}
+        </a>
+      {{/if}}
+      {{#if settings.popular_search_2}}
+        <a class="popular-search-item">
+          {{settings.popular_search_2}}
+        </a>
+      {{/if}}
+      {{#if settings.popular_search_3}}
+        <a class="popular-search-item">
+          {{settings.popular_search_3}}
+        </a>
+      {{/if}}
+      {{#if settings.popular_search_4}}
+        <a class="popular-search-item">
+          {{settings.popular_search_4}}
+        </a>
+      {{/if}}
+    </div>
+  </div>
+</section>
+
+<!-- <div class="container">
+  <section class="section knowledge-base">
+    <section class="categories blocks">
+      <ul class="blocks-list">
+      </ul>
+      {{pagination}}
+    </section> -->
+<div class="container">
+  <section class="section knowledge-base">
+    <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
+    <section class="categories blocks">
+      <ul class="blocks-list">
+        {{#each categories}}
+          {{#if ../has_multiple_categories}}
+        		{{#isnt id 16762864021268}}
+            <li class="blocks-item">
+              <a href='{{url}}' class="blocks-item-link">
+                <!--Images for categories -->
+								{{#is id 14825757602708}}<img class="" src="{{asset 'icon_getting_started.png'}}" />{{/is}}
+                {{#is id 14825706723092}}<img class="" src="{{asset 'icon_using_smartabase.png'}}" />{{/is}}
+                {{#is id 14825706115476}}<img class="" src="{{asset 'icon_smartabase_builder.png'}}" />{{/is}}
+                {{#is id 14825766256660}}<img class="" src="{{asset 'icon_smartabase_administrator.png'}}" />{{/is}}
+                {{#is id 14981113479316}}<img class="" src="{{asset 'icon_connect_with_other_technologies.png'}}" />{{/is}}
+                {{#is id 14981113674388}}<img class="" src="{{asset 'icon_tutorials.png'}}" />{{/is}}
+								<!--End images for categories -->
+                <span class="blocks-item-title">{{name}}</span>
+                <span class="blocks-item-description">{{excerpt description}}</span>
+              </a>
+            </li>
+        {{/isnt}}
+          {{else}}
+            {{#each sections}}
+              <li class="blocks-item">
+                <a href='{{url}}' class="blocks-item-link">
+                  <span class="blocks-item-title">
+                    {{name}}
+                  </span>
+                  <span class="blocks-item-description">{{excerpt description}}</span>
+                </a>
+              </li>
+            {{/each}}
+          {{/if}}
+        {{/each}}
+      </ul>
+      {{pagination}}
+    </section>
+
+<!--     {{#if promoted_articles}}
+      <section class="articles">
+        <div class="articles-section-title">Latest Smartabase Release Notes</div>
+        <div class="articles-section-subtitle"><a href="https://smartabase.zendesk.com/hc/en-us/articles/14857974699796">Subscribe to release notes</a></div>
+        <ul class="article-list promoted-articles">
+          {{#each promoted_articles}}
+            <li class="promoted-articles-item">
+              <div class="promoted-articles-item__icon">
+                <img src='{{../settings.promoted_article_icon}}' width=32 height=32>
+              </div>
+                <div class="promoted-articles-item__content">
+                  <a href="{{url}}" class="promoted-articles-item__title">
+                    {{title}}
+                    {{#if internal}}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-lock" title="{{t 'internal'}}">
+                        <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1"/>
+                        <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"/>
+                      </svg>
+                    {{/if}}
+                  </a>
+                  <p class="promoted-articles-item__text">
+                    {{excerpt body characters=50}}
+                  </p>
+                </div>
+            </li>
+          {{/each}}
+        </ul>
+      </section>
+    {{/if}} -->
+  </section>
+</div>
+
+<div class="banner-container">
+  <div class="banner-inner">
+    <h1 class="banner-title">{{ settings.banner_title }}</h1>
+    <p class="banner-description">
+      {{ settings.banner_description }}
+    </p>
+    <a class="button button-primary banner-button" href={{ settings.banner_button_link }}>
+      {{ settings.banner_button_text }}
+      <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 24 24" width="22px" fill="{{ settings.background_color }}">
+        <path d="M0 0h24v24H0V0z" fill="none"/>
+        <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<script>
+  var smartabaseWebCategoryIcon = "{{asset 'smartabase_web_category_icon.svg'}}";
+  var smartabaseMobileCategoryIcon = "{{asset 'smartabase_mobile_category_icon.svg'}}";
+  var generalCategoryIcon = "{{asset 'general_category_icon.svg'}}";
+</script>

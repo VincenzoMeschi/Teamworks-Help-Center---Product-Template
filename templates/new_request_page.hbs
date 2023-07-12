@@ -1,0 +1,161 @@
+        <script>
+$( document ).ready(function() {
+$('#request_custom_fields_5652517816601').val(document.referrer)
+$('.request_custom_fields_5652517816601').hide();
+})
+</script>
+
+<div class="container-divider"></div>
+<div class="container" id="page-container">
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+    <div class="search-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon">
+        <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
+        <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
+      </svg>
+      {{search submit=false}}
+    </div>
+  </nav>
+
+  <h1>
+    {{settings.new_request_page_title}}
+    <span class="follow-up-hint">
+      {{follow_up}}
+    </span>
+  </h1>
+
+  <section class="contact-options blocks hidden">
+    <ul class="blocks-list">
+      <li class="blocks-item group-item new-request">
+        <h3 class="group-item__title">{{settings.new_request_tile_title}}</h3>
+        <p class="group-item__description">{{settings.new_request_tile_description}}</p>
+        <a class="link-stretched" href="#" id="submit-a-request">
+          <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.02901 7.27849L8.40674 7.27849L14.582 7.27849L11.6183 10.2422C11.2169 10.6436 11.2169 11.2919 11.6183 11.6933C12.0196 12.0946 12.6679 12.0946 13.0693 11.6933L17.7927 6.96977C18.1941 6.56842 18.1941 5.9201 17.7927 5.51876L13.0693 0.795269C12.6679 0.393928 12.0196 0.393928 11.6183 0.795269C11.2169 1.19661 11.2169 1.84493 11.6183 2.24628L14.582 5.22033L1.02901 5.22033C0.463015 5.22033 -7.43866e-05 5.68341 -7.43866e-05 6.24941C-7.43866e-05 6.8154 0.463015 7.27849 1.02901 7.27849Z" fill="#00C848"/>
+          </svg>
+        </a>
+      </li>
+      <li class="blocks-item group-item">
+        <h3 class="group-item__title">{{settings.chat_tile_title}}</h3>
+        <p class="group-item__description">{{settings.chat_tile_description}}</p>
+        <a class="link-stretched" href="#" id="live-chat">
+          <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.02901 7.27849L8.40674 7.27849L14.582 7.27849L11.6183 10.2422C11.2169 10.6436 11.2169 11.2919 11.6183 11.6933C12.0196 12.0946 12.6679 12.0946 13.0693 11.6933L17.7927 6.96977C18.1941 6.56842 18.1941 5.9201 17.7927 5.51876L13.0693 0.795269C12.6679 0.393928 12.0196 0.393928 11.6183 0.795269C11.2169 1.19661 11.2169 1.84493 11.6183 2.24628L14.582 5.22033L1.02901 5.22033C0.463015 5.22033 -7.43866e-05 5.68341 -7.43866e-05 6.24941C-7.43866e-05 6.8154 0.463015 7.27849 1.02901 7.27849Z" fill="#00C848"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <div id="main-content" class="form contact-form hidden">
+    {{request_form wysiwyg=true}}
+  </div>
+</div>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    
+  	var chatTile = document.getElementById('live-chat');
+		if (chatTile) {
+     	chatTile.addEventListener('click', function(e) {
+  
+  			console.log('Show Web Widget');
+
+        {{#if settings.use_web_widget}}
+          zE('webWidget', 'updateSettings', {
+            webWidget: {
+             contactForm: {
+                suppress: true
+              },
+              helpCenter: {
+                suppress: true
+              },
+              talk: {
+                suppress: true
+              },
+              answerBot: {
+                suppress: true
+              }
+            }
+          });
+          zE('webWidget', 'open');
+        {{else}}
+					zE('messenger', 'open');
+        {{/if}}
+
+  			e.preventDefault();
+      });
+  	}
+
+    {{#if settings.use_web_widget}}
+  	 zE('webWidget:on', 'close', function() {
+  
+        console.log('The widget has been closed!');
+  
+        zE('webWidget', 'updateSettings', {
+          webWidget: {
+           contactForm: {
+              suppress: false
+            },
+            helpCenter: {
+              suppress: false
+            },
+            talk: {
+              suppress: false
+            },
+            answerBot: {
+              suppress: false
+            }
+          }
+        });
+      });
+    {{/if}}
+  
+    var form = document.getElementById('main-content');
+    if (!form) return;
+
+    var formField = document.getElementById('request_issue_type_select');
+    if (!formField) {
+  		// form.style.display = 'block';
+  		form.classList.remove('hidden');
+  		return;
+  	}
+
+    if (formField.value !== '-') {
+      form.classList.remove('hidden');
+    } else {
+  		var contactOptions = document.querySelector('.contact-options');
+  		if (contactOptions) {
+  			contactOptions.classList.remove('hidden');
+  		}
+  	}
+  
+  	var requestTile = document.getElementById('submit-a-request');
+    requestTile.addEventListener('click', function(e) {
+  		requestTile.classList.toggle('is-active');
+  		var isActive = requestTile.classList.contains('is-active');
+  
+  		// console.log('Toggle request form', isActive);
+
+  		$(form).slideToggle();
+  		if (isActive) {
+  			$(form).slideDown();
+   			form.scrollIntoView({
+        	behavior: 'smooth'
+        });
+  		} else {
+				$(form).slideUp();
+  			// var pageContainer = document.getElementById('page-container');
+        // if (pageContainer) {
+        // 	pageContainer.scrollIntoView({
+        //     behavior: 'smooth'
+        //   });
+        // }
+  		}
+  
+  		e.preventDefault();
+    });
+  });
+
+</script>

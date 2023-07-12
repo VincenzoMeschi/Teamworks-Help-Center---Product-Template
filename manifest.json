@@ -1,0 +1,573 @@
+{
+  "name": "Smartabase 1.1",
+  "author": "Zendesk Professional Services",
+  "version": "1.1",
+  "api_version": 2,
+  "default_locale": "en-us",
+  "settings": [
+    {
+      "label": "colors_group_label",
+      "variables": [
+        {
+          "identifier": "brand_color",
+          "type": "color",
+          "description": "brand_color_description",
+          "label": "brand_color_label",
+          "value": "rgba(0, 150, 64, 1)"
+        },
+        {
+          "identifier": "brand_text_color",
+          "type": "color",
+          "description": "brand_text_color_description",
+          "label": "brand_text_color_label",
+          "value": "#DFE3E6"
+        },
+        {
+          "identifier": "text_color",
+          "type": "color",
+          "description": "text_color_description",
+          "label": "text_color_label",
+          "value": "#000000"
+        },
+        {
+          "identifier": "link_color",
+          "type": "color",
+          "description": "link_color_description",
+          "label": "link_color_label",
+          "value": "rgba(0, 150, 64, 1)"
+        },
+        {
+          "identifier": "visited_link_color",
+          "type": "color",
+          "description": "visited_link_color_description",
+          "label": "visited_link_color_label",
+          "value": "rgba(0, 150, 64, 1)"
+        },
+        {
+          "identifier": "background_color",
+          "type": "color",
+          "description": "background_color_description",
+          "label": "background_color_label",
+          "value": "#FFFFFF"
+        }
+      ]
+    },
+    {
+      "label": "fonts_group_label",
+      "variables": [
+        {
+          "identifier": "heading_font",
+          "type": "list",
+          "description": "heading_font_description",
+          "label": "heading_font_label",
+          "value": "'Manrope', Arial",
+          "options": [
+            {
+              "label": "System",
+              "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Arial",
+              "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Arial Black",
+              "value": "'Arial Black', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Baskerville",
+              "value": "Baskerville, 'Times New Roman', Times, serif"
+            },
+            {
+              "label": "Century Gothic",
+              "value": "'Century Gothic', AppleGothic, sans-serif"
+            },
+            {
+              "label": "Copperplate Light",
+              "value": "'Copperplate Light', 'Copperplate Gothic Light', serif"
+            },
+            {
+              "label": "Courier New",
+              "value": "'Courier New', Courier, monospace"
+            },
+            {
+              "label": "Futura",
+              "value": "Futura, 'Century Gothic', AppleGothic, sans-serif"
+            },
+            {
+              "label": "Garamond",
+              "value": "Garamond, 'Hoefler Text', 'Times New Roman', Times, serif"
+            },
+            {
+              "label": "Geneva",
+              "value": "Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif"
+            },
+            {
+              "label": "Georgia",
+              "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
+            },
+            {
+              "label": "Helvetica",
+              "value": "Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Helvetica Neue",
+              "value": "'Helvetica Neue', Arial, Helvetica, sans-serif"
+            },
+            {
+              "label": "Impact",
+              "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+            },
+            {
+              "label": "Lucida Grande",
+              "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
+            },
+            {
+              "label": "Trebuchet MS",
+              "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            },
+            {
+              "label": "Manrope",
+              "value": "'Manrope', Arial"
+            }
+          ]
+        },
+        {
+          "identifier": "text_font",
+          "type": "list",
+          "description": "text_font_description",
+          "label": "text_font_label",
+          "value": "'Barlow', Arial",
+          "options": [
+            {
+              "label": "System",
+              "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Arial",
+              "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Arial Black",
+              "value": "'Arial Black', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Baskerville",
+              "value": "Baskerville, 'Times New Roman', Times, serif"
+            },
+            {
+              "label": "Century Gothic",
+              "value": "'Century Gothic', AppleGothic, sans-serif"
+            },
+            {
+              "label": "Copperplate Light",
+              "value": "'Copperplate Light', 'Copperplate Gothic Light', serif"
+            },
+            {
+              "label": "Courier New",
+              "value": "'Courier New', Courier, monospace"
+            },
+            {
+              "label": "Futura",
+              "value": "Futura, 'Century Gothic', AppleGothic, sans-serif"
+            },
+            {
+              "label": "Garamond",
+              "value": "Garamond, 'Hoefler Text', 'Times New Roman', Times, serif"
+            },
+            {
+              "label": "Geneva",
+              "value": "Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif"
+            },
+            {
+              "label": "Georgia",
+              "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
+            },
+            {
+              "label": "Helvetica",
+              "value": "Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Helvetica Neue",
+              "value": "'Helvetica Neue', Arial, Helvetica, sans-serif"
+            },
+            {
+              "label": "Impact",
+              "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+            },
+            {
+              "label": "Lucida Grande",
+              "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
+            },
+            {
+              "label": "Trebuchet MS",
+              "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            },
+            {
+              "label": "Barlow",
+              "value": "'Barlow', Arial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "brand_group_label",
+      "variables": [
+        {
+          "identifier": "logo",
+          "type": "file",
+          "description": "logo_description",
+          "label": "logo_label"
+        },
+        {
+          "identifier": "show_brand_name",
+          "type": "checkbox",
+          "description": "show_brand_name_description",
+          "label": "show_brand_name_label",
+          "value": false
+        },
+        {
+          "identifier": "favicon",
+          "type": "file",
+          "description": "favicon_description",
+          "label": "favicon_label"
+        }
+      ]
+    },
+    {
+      "label": "images_group_label",
+      "variables": [
+        {
+          "identifier": "homepage_background_image",
+          "type": "file",
+          "description": "homepage_background_image_description",
+          "label": "homepage_background_image_label"
+        },
+        {
+          "identifier": "community_background_image",
+          "type": "file",
+          "description": "community_background_image_description",
+          "label": "community_background_image_label"
+        },
+        {
+          "identifier": "community_image",
+          "type": "file",
+          "description": "community_image_description",
+          "label": "community_image_label"
+        }
+      ]
+    },
+    {
+      "label": "search_group_label",
+      "variables": [
+        {
+          "identifier": "instant_search",
+          "type": "checkbox",
+          "description": "instant_search_description",
+          "label": "instant_search_label",
+          "value": true
+        },
+        {
+          "identifier": "scoped_kb_search",
+          "type": "checkbox",
+          "description": "scoped_knowledge_base_search_description",
+          "label": "scoped_knowledge_base_search_label",
+          "value": false
+        },
+        {
+          "identifier": "scoped_community_search",
+          "type": "checkbox",
+          "description": "scoped_community_search_description",
+          "label": "scoped_community_search_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "home_page_group_label",
+      "variables": [
+        {
+          "identifier": "homepage_title",
+          "type": "text",
+          "description": "homepage_title_description",
+          "label": "homepage_title_label",
+          "value": "How can we help?"
+        },
+        {
+          "identifier": "homepage_description",
+          "type": "text",
+          "description": "homepage_description_description",
+          "label": "homepage_description_label",
+          "value": "Have a question? Need a tip?  You can find a host of helpful resources in our knowledge base or reach out to our friendly support team."
+        },
+        {
+          "identifier": "popular_search_1",
+          "type": "text",
+          "description": "First popular search option.",
+          "label": "Popular Search 1",
+          "value": "Logging in"
+        },
+        {
+          "identifier": "popular_search_2",
+          "type": "text",
+          "description": "Second popular search option.",
+          "label": "Popular Search 2",
+          "value": "Data entry"
+        },
+        {
+          "identifier": "popular_search_3",
+          "type": "text",
+          "description": "Third popular search option.",
+          "label": "Popular Search 1",
+          "value": ""
+        },
+        {
+          "identifier": "popular_search_4",
+          "type": "text",
+          "description": "Forth popular search option.",
+          "label": "Popular Search 4",
+          "value": ""
+        },
+        {
+          "identifier": "promoted_article_icon",
+          "type": "file",
+          "description": "Icon for promoted articles.",
+          "label": "Promoted article icon"
+        },
+        {
+          "identifier": "banner_background_image",
+          "type": "file",
+          "description": "Background image for banner section.",
+          "label": "Banner background image"
+        },
+        {
+          "identifier": "banner_title",
+          "type": "text",
+          "description": "Title for banner section.",
+          "label": "Banner title",
+          "value": "Complete a Smartabase course"
+        },
+        {
+          "identifier": "banner_description",
+          "type": "text",
+          "description": "Description for banner section.",
+          "label": "Banner description",
+          "value": "Join the Smartabase Academy and learn how to use, build and administrate a Smartabase site."
+        },
+        {
+          "identifier": "banner_button_text",
+          "type": "text",
+          "description": "Button text for banner section.",
+          "label": "Banner button text",
+          "value": "LEARN MORE"
+        },
+        {
+          "identifier": "banner_button_link",
+          "type": "text",
+          "description": "Button link for banner section.",
+          "label": "Banner button link",
+          "value": "https://academy.fusionsport.com"
+        },
+        {
+          "identifier": "show_recent_activity",
+          "type": "checkbox",
+          "description": "recent_activity_description",
+          "label": "recent_activity_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "article_page_group_label",
+      "variables": [
+        {
+          "identifier": "show_articles_in_section",
+          "type": "checkbox",
+          "description": "articles_in_section_description",
+          "label": "articles_in_section_label",
+          "value": true
+        },
+        {
+          "identifier": "show_article_author",
+          "type": "checkbox",
+          "description": "article_author_description",
+          "label": "article_author_label",
+          "value": true
+        },
+        {
+          "identifier": "show_article_comments",
+          "type": "checkbox",
+          "description": "article_comments_description",
+          "label": "article_comments_label",
+          "value": false
+        },
+        {
+          "identifier": "show_follow_article",
+          "type": "checkbox",
+          "description": "follow_article_description",
+          "label": "follow_article_label",
+          "value": false
+        },
+        {
+          "identifier": "show_recently_viewed_articles",
+          "type": "checkbox",
+          "description": "recently_viewed_articles_description",
+          "label": "recently_viewed_articles_label",
+          "value": true
+        },
+        {
+          "identifier": "show_related_articles",
+          "type": "checkbox",
+          "description": "related_articles_description",
+          "label": "related_articles_label",
+          "value": true
+        },
+        {
+          "identifier": "show_article_sharing",
+          "type": "checkbox",
+          "description": "article_sharing_description",
+          "label": "article_sharing_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "section_page_group_label",
+      "variables": [
+        {
+          "identifier": "show_follow_section",
+          "type": "checkbox",
+          "description": "follow_section_description",
+          "label": "follow_section_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "community_post_group_label",
+      "variables": [
+        {
+          "identifier": "show_follow_post",
+          "type": "checkbox",
+          "description": "follow_post_description",
+          "label": "follow_post_label",
+          "value": true
+        },
+        {
+          "identifier": "show_post_sharing",
+          "type": "checkbox",
+          "description": "post_sharing_description",
+          "label": "post_sharing_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "New Request Page",
+      "variables": [
+        {
+          "identifier": "new_request_page_title",
+          "type": "text",
+          "description": "The title of the New Request page",
+          "label": "Page title",
+          "value": "Contact us"
+        },
+        {
+          "identifier": "new_request_tile_title",
+          "type": "text",
+          "description": "The title to display in the new request tile",
+          "label": "New request tile title",
+          "value": "Submit a help request"
+        },
+        {
+          "identifier": "new_request_tile_description",
+          "type": "text",
+          "description": "The description to display in the new request tile",
+          "label": "New request tile description",
+          "value": "Need assistance? Submit a help request and we’ll get to work!"
+        },
+        {
+          "identifier": "chat_tile_title",
+          "type": "text",
+          "description": "The title to display in the chat tile",
+          "label": "Chat tile title",
+          "value": "Chat with us"
+        },
+        {
+          "identifier": "chat_tile_description",
+          "type": "text",
+          "description": "The description to display in the chat tile",
+          "label": "Chat tile description",
+          "value": "Have a question? Need a tip? Chat with us."
+        },
+        {
+          "identifier": "use_web_widget",
+          "type": "checkbox",
+          "description": "Use the Web Widget instead of the Messaging Widget",
+          "label": "Use Web Widget",
+          "value": false
+        },
+        {
+          "identifier": "phone_tile_title",
+          "type": "text",
+          "description": "The title to display in the phone tile",
+          "label": "Phone tile title",
+          "value": ""
+        },
+        {
+          "identifier": "phone_tile_description",
+          "type": "text",
+          "description": "The description to display in the phone tile",
+          "label": "Phone tile description",
+          "value": ""
+        },
+        {
+          "identifier": "phone_number_au",
+          "type": "text",
+          "description": "The phone number for the AU office",
+          "label": "Phone number (AU)",
+          "value": ""
+        },
+        {
+          "identifier": "phone_number_us",
+          "type": "text",
+          "description": "The phone number for the US office",
+          "label": "Phone number (US)",
+          "value": ""
+        },
+        {
+          "identifier": "phone_number_uk",
+          "type": "text",
+          "description": "The phone number for the UK office",
+          "label": "Phone number (UK)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "label": "community_topic_group_label",
+      "variables": [
+        {
+          "identifier": "show_follow_topic",
+          "type": "checkbox",
+          "description": "follow_topic_description",
+          "label": "follow_topic_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "Activities Page",
+      "variables": [
+        {
+          "identifier": "show_contributions",
+          "type": "checkbox",
+          "description": "Show link to 'My Contributions' page.",
+          "label": "Show contributions",
+          "value": false
+        }
+      ]
+    }
+  ]
+}
