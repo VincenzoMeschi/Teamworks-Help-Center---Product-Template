@@ -53,39 +53,189 @@
     <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
     <section class="categories blocks">
       <ul class="blocks-list">
-        {{#each categories}}
-          {{#if ../has_multiple_categories}}
-        		{{#isnt id 16762864021268}}
-            <li class="blocks-item">
-              <a href='{{url}}' class="blocks-item-link">
-                <!--Images for categories -->
-								{{#is id 14825757602708}}<img class="" src="{{asset 'icon_getting_started.png'}}" />{{/is}}
-                {{#is id 14825706723092}}<img class="" src="{{asset 'icon_using_smartabase.png'}}" />{{/is}}
-                {{#is id 14825706115476}}<img class="" src="{{asset 'icon_smartabase_builder.png'}}" />{{/is}}
-                {{#is id 14825766256660}}<img class="" src="{{asset 'icon_smartabase_administrator.png'}}" />{{/is}}
-                {{#is id 14981113479316}}<img class="" src="{{asset 'icon_connect_with_other_technologies.png'}}" />{{/is}}
-                {{#is id 14981113674388}}<img class="" src="{{asset 'icon_tutorials.png'}}" />{{/is}}
-								<!--End images for categories -->
-                <span class="blocks-item-title">{{name}}</span>
-                <span class="blocks-item-description">{{excerpt description}}</span>
-              </a>
-            </li>
-        {{/isnt}}
-          {{else}}
-            {{#each sections}}
-              <li class="blocks-item">
-                <a href='{{url}}' class="blocks-item-link">
-                  <span class="blocks-item-title">
-                    {{name}}
-                  </span>
-                  <span class="blocks-item-description">{{excerpt description}}</span>
-                </a>
-              </li>
-            {{/each}}
-          {{/if}}
-        {{/each}}
+        <li class="blocks-item">
+          <a href='{{settings.a_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.a_box_icon}}" />
+            <span class="blocks-item-title">{{settings.a_box_title}}</span>
+            <span class="blocks-item-description">{{settings.a_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.b_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.b_box_icon}}" />
+            <span class="blocks-item-title">{{settings.b_box_title}}</span>
+            <span class="blocks-item-description">{{settings.b_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.c_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.c_box_icon}}" />
+            <span class="blocks-item-title">{{settings.c_box_title}}</span>
+            <span class="blocks-item-description">{{settings.c_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.d_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.d_box_icon}}" />
+            <span class="blocks-item-title">{{settings.d_box_title}}</span>
+            <span class="blocks-item-description">{{settings.d_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.e_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.e_box_icon}}" />
+            <span class="blocks-item-title">{{settings.e_box_title}}</span>
+            <span class="blocks-item-description">{{settings.e_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.f_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.f_box_icon}}" />
+            <span class="blocks-item-title">{{settings.f_box_title}}</span>
+            <span class="blocks-item-description">{{settings.f_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.g_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.g_box_icon}}" />
+            <span class="blocks-item-title">{{settings.g_box_title}}</span>
+            <span class="blocks-item-description">{{settings.g_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.h_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.h_box_icon}}" />
+            <span class="blocks-item-title">{{settings.h_box_title}}</span>
+            <span class="blocks-item-description">{{settings.h_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.i_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.i_box_icon}}" />
+            <span class="blocks-item-title">{{settings.i_box_title}}</span>
+            <span class="blocks-item-description">{{settings.i_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.j_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.j_box_icon}}" />
+            <span class="blocks-item-title">{{settings.j_box_title}}</span>
+            <span class="blocks-item-description">{{settings.j_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.k_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.k_box_icon}}" />
+            <span class="blocks-item-title">{{settings.k_box_title}}</span>
+            <span class="blocks-item-description">{{settings.k_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.l_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.l_box_icon}}" />
+            <span class="blocks-item-title">{{settings.l_box_title}}</span>
+            <span class="blocks-item-description">{{settings.l_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.m_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.m_box_icon}}" />
+            <span class="blocks-item-title">{{settings.m_box_title}}</span>
+            <span class="blocks-item-description">{{settings.m_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.n_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.n_box_icon}}" />
+            <span class="blocks-item-title">{{settings.n_box_title}}</span>
+            <span class="blocks-item-description">{{settings.n_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.o_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.o_box_icon}}" />
+            <span class="blocks-item-title">{{settings.o_box_title}}</span>
+            <span class="blocks-item-description">{{settings.o_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.p_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.p_box_icon}}" />
+            <span class="blocks-item-title">{{settings.p_box_title}}</span>
+            <span class="blocks-item-description">{{settings.p_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.q_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.q_box_icon}}" />
+            <span class="blocks-item-title">{{settings.q_box_title}}</span>
+            <span class="blocks-item-description">{{settings.q_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.r_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.r_box_icon}}" />
+            <span class="blocks-item-title">{{settings.r_box_title}}</span>
+            <span class="blocks-item-description">{{settings.r_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.s_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.s_box_icon}}" />
+            <span class="blocks-item-title">{{settings.s_box_title}}</span>
+            <span class="blocks-item-description">{{settings.s_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.t_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.t_box_icon}}" />
+            <span class="blocks-item-title">{{settings.t_box_title}}</span>
+            <span class="blocks-item-description">{{settings.t_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.u_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.u_box_icon}}" />
+            <span class="blocks-item-title">{{settings.u_box_title}}</span>
+            <span class="blocks-item-description">{{settings.u_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.v_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.v_box_icon}}" />
+            <span class="blocks-item-title">{{settings.v_box_title}}</span>
+            <span class="blocks-item-description">{{settings.v_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.w_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.w_box_icon}}" />
+            <span class="blocks-item-title">{{settings.w_box_title}}</span>
+            <span class="blocks-item-description">{{settings.w_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.x_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.x_box_icon}}" />
+            <span class="blocks-item-title">{{settings.x_box_title}}</span>
+            <span class="blocks-item-description">{{settings.x_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.y_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.y_box_icon}}" />
+            <span class="blocks-item-title">{{settings.y_box_title}}</span>
+            <span class="blocks-item-description">{{settings.y_box_desc}}</span>
+          </a>
+        </li>
+        <li class="blocks-item">
+          <a href='{{settings.z_box_url}}' class="blocks-item-link">
+            <img class="" src="{{settings.z_box_icon}}" />
+            <span class="blocks-item-title">{{settings.z_box_title}}</span>
+            <span class="blocks-item-description">{{settings.z_box_desc}}</span>
+          </a>
+        </li>
       </ul>
-      {{pagination}}
     </section>
 
 <!--     {{#if promoted_articles}}

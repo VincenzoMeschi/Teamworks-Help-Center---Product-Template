@@ -1,7 +1,7 @@
 {
-  "name": "Smartabase 1.1",
-  "author": "Zendesk Professional Services",
-  "version": "1.1",
+  "name": "Smartabase 1.2",
+  "author": "Vincenzo Meschi",
+  "version": "1.2",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -49,6 +49,713 @@
           "description": "background_color_description",
           "label": "background_color_label",
           "value": "#FFFFFF"
+        }
+      ]
+    },
+    {
+      "label": "boxes_group_label",
+      "variables": [
+        {
+          "identifier": "a_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "a_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "a_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "a_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "b_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "b_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "b_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "b_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "c_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "c_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "c_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "c_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "d_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "d_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "d_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "d_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "e_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "e_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "e_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "e_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "f_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "f_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "f_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "f_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "g_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "g_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "g_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "g_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "h_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "h_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "h_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "h_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "i_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "i_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "i_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "i_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "j_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "j_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "j_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "j_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "k_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "k_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "k_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "k_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "l_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "l_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "l_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "l_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "m_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "m_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "m_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "m_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "n_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "n_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "n_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "n_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "o_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "o_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "o_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "o_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "p_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "p_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "p_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "p_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "q_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "q_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "q_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "q_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "r_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "r_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "r_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "r_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "s_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "s_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "s_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "s_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "t_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "t_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "t_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "t_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "u_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "u_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "u_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "u_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "v_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "v_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "v_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "v_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "w_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "w_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "w_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "w_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "x_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "x_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "x_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "x_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "y_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "y_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "y_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "y_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
+        },
+        {
+          "identifier": "z_box_url",
+          "type": "text",
+          "description": "a_box_url_description",
+          "label": "a_box_url_label",
+          "value": "https://www.smartabase.com"
+        },
+        {
+          "identifier": "z_box_icon",
+          "type": "file",
+          "description": "a_box_icon_description",
+          "label": "a_box_icon_label"
+        },
+        {
+          "identifier": "z_box_title",
+          "type": "text",
+          "description": "a_box_title_description",
+          "label": "a_box_title_label",
+          "value": "Category 1"
+        },
+        {
+          "identifier": "z_box_desc",
+          "type": "text",
+          "description": "a_box_description",
+          "label": "a_box_desc_label",
+          "value": "Category 1 description to be added in the future I am adding length for test purposes."
         }
       ]
     },
@@ -232,6 +939,71 @@
           "type": "file",
           "description": "favicon_description",
           "label": "favicon_label"
+        }
+      ]
+    },
+    {
+      "label": "nav_logos_group_label",
+      "variables": [
+        {
+          "identifier": "hub_logo",
+          "type": "file",
+          "description": "hub_logo_description",
+          "label": "hub_logo_label"
+        },
+        {
+          "identifier": "communities_logo",
+          "type": "file",
+          "description": "communities_logo_description",
+          "label": "communities_logo_label"
+        },
+        {
+          "identifier": "arms_logo",
+          "type": "file",
+          "description": "arms_logo_description",
+          "label": "arms_logo_label"
+        },
+        {
+          "identifier": "pathways_logo",
+          "type": "file",
+          "description": "pathways_logo_description",
+          "label": "pathways_logo_label"
+        },
+        {
+          "identifier": "inflcr_logo",
+          "type": "file",
+          "description": "inflcr_logo_description",
+          "label": "inflcr_logo_label"
+        },
+        {
+          "identifier": "notemeal_logo",
+          "type": "file",
+          "description": "notemeal_logo_description",
+          "label": "notemeal_logo_label"
+        },
+        {
+          "identifier": "pulse_logo",
+          "type": "file",
+          "description": "pulse_logo_description",
+          "label": "pulse_logo_label"
+        },
+        {
+          "identifier": "retain_logo",
+          "type": "file",
+          "description": "retain_logo_description",
+          "label": "retain_logo_label"
+        },
+        {
+          "identifier": "smartabase_logo",
+          "type": "file",
+          "description": "smartabase_logo_description",
+          "label": "smartabase_logo_label"
+        },
+        {
+          "identifier": "whistle_logo",
+          "type": "file",
+          "description": "whistle_logo_description",
+          "label": "whistle_logo_label"
         }
       ]
     },

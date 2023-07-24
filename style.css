@@ -5360,8 +5360,8 @@ html[dir='rtl'] .notification-left-aligned {
 }
 
 .dropdown-menu {
-  background: #fff;
-  border: 1px solid #d8d8d8;
+  background: #181818;
+  border: 1px solid #3a3a3a;
   border-radius: 3px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   display: none;
@@ -5407,7 +5407,7 @@ html[dir='rtl'] .notification-left-aligned {
 }
 
 .dropdown-menu [role='menuitem'] {
-  color: #333;
+  color: #f3f3f3;
   cursor: pointer;
   display: block;
   padding: 7px 40px 7px 20px;
@@ -5418,6 +5418,37 @@ html[dir='rtl'] .notification-left-aligned {
   text-align: start;
   line-height: inherit;
   width: 90%;
+}
+
+.menuitemlogo {
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  padding: 7px 40px 7px 20px;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  text-align: start;
+  line-height: inherit;
+  width: 90%;
+}
+
+.menuitemlogo img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuitmelogo span {
+  align-items: center;
+  justify-content: center;
+}
+
+.menuitemlogo span {
+  color: #f3f3f3;
 }
 
 [dir='rtl'] .dropdown-menu [role='menuitem'] {

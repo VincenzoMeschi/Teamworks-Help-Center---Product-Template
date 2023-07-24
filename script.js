@@ -939,6 +939,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+// Hide blocks-item if blocks-item-title = "Category 1"
+document.addEventListener('DOMContentLoaded', function() {
+  var blocksItemTitle = document.getElementsByClassName("blocks-item-title");
+  var blocksItem = document.getElementsByClassName("blocks-item");
+
+  for (var i = 0; i < blocksItemTitle.length; i++) {
+    if (blocksItemTitle[i].innerHTML == "Category 1") {
+      blocksItem[i].style.display = "none";
+    }
+  }
+});
+
 // // Redirection from Smartabase Zendesk to Teamworks Zendesk
 // var oldIds = ["4411598067481", "15009881706388"];
 //   var newIds = ["5139709475097", "15009883287188"];
