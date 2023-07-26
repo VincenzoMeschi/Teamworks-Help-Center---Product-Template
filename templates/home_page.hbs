@@ -1,3 +1,25 @@
+{{!-- for each category in the category object, append it to the globalCategories object in script.js --}}
+<script type="text/javascript">
+  {{#each categories}}
+    var categoryName = "{{name}}";
+    var categoryId = "category-" + "{{id}}";
+    var categoryUrl = "{{url}}";  // Assuming each category has a url property
+
+    // Create a JavaScript object to store both the name and url
+    var categoryData = {
+      name: categoryName,
+      url: categoryUrl
+    };
+    
+    // Convert the object to a JSON string for storage in localStorage
+    var categoryDataString = JSON.stringify(categoryData);
+
+    // Store the string in localStorage
+    localStorage.setItem(categoryId, categoryDataString);
+  {{/each}}
+</script>
+
+
 <h1 class="visibility-hidden">{{ help_center.name }}</h1>
 
 <section id="main-content" class="section hero">

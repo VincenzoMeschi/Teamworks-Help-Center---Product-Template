@@ -2800,6 +2800,45 @@ zd-autocomplete-title-multibrand {
   display: inline-block;
 }
 
+#category-tabs {
+  list-style-type: none;
+  padding: 20px 0 5px 0;
+  margin-left: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: $background_color;
+}
+
+#category-tabs li {
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid transparent; /* Prevents shifting on active state */
+}
+
+#category-tabs a {
+  color: $text_color;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-family: $heading_font;
+  transition: all 0.2s ease-in-out;
+  display: block; /* Required for bottom border */
+}
+
+#category-tabs a:hover {
+  color: $brand_color;
+  background-color: $background_color;
+}
+
+#category-tabs .activetab a {
+  color: $brand_color;
+  background-color: $background_color; /* Active tab has the background color */
+  position: relative;
+  top: 1px; /* Moves the active tab slightly down to give the illusion of 'pushing' */
+  border-bottom: 5px solid $brand_color; /* Thick border at the bottom */
+}
+
 /***** Vote *****/
 /* Used in article comments, post comments and post */
 .vote {

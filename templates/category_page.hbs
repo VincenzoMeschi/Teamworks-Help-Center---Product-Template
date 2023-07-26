@@ -1,3 +1,4 @@
+<div id="category-tabs"></div>
 <div class="container-divider"></div>
 <div class="container">
   <nav class="sub-nav">
@@ -91,3 +92,46 @@
     </div>
   </div>
 </div>
+<script>
+  var categoryTabsContainer = document.getElementById('category-tabs');
+
+  for (var i = 0; i < localStorage.length; i++){
+    var key = localStorage.key(i);
+
+    // check if this key starts with "category-"
+    if (key.startsWith('category-')) {
+      var categoryDataString = localStorage.getItem(key);
+
+      // Parse the data string back into a JavaScript object
+      var categoryData = JSON.parse(categoryDataString);
+
+      var categoryId = key;
+      var categoryName = categoryData.name;
+      var categoryUrl = categoryData.url;
+
+      // Create a new list item and anchor tag
+      var categoryListItem = document.createElement('li');
+      var categoryLink = document.createElement('a');
+
+      // Set the href property of the anchor tag to the category's URL
+      categoryLink.href = categoryUrl;
+      categoryLink.textContent = categoryName;
+      categoryLink.dataset.categoryId = categoryId;
+
+      // Append the anchor tag to the list item, and the list item to the container
+      categoryListItem.appendChild(categoryLink);
+      categoryTabsContainer.appendChild(categoryListItem);
+    }
+  }
+
+  // Highlight the current category
+  var currentCategoryId = "category-" + "{{category.id}}"; // current category id from the handlebars context
+  var currentCategoryLink = document.querySelector('a[data-category-id="' + currentCategoryId + '"]');
+  if (currentCategoryLink) { // check if the link exists before adding class
+    currentCategoryLink.parentElement.className += ' activetab'; // add the active class to the parent list item
+  }
+</script>
+
+
+
+
