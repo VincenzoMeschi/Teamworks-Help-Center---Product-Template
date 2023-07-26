@@ -2810,6 +2810,10 @@ zd-autocomplete-title-multibrand {
   background-color: $background_color;
 }
 
+#category-tabs:first-child a {
+  padding-left: 0;
+}
+
 @media (min-width: 1160px){
   #category-tabs {
     width: 90%;
