@@ -2810,7 +2810,7 @@ zd-autocomplete-title-multibrand {
   background-color: $background_color;
 }
 
-#category-tabs:first-child a {
+#category-tabs:first-child > a {
   padding-left: 0;
 }
 
