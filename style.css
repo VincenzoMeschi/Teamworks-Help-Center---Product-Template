@@ -2803,10 +2803,17 @@ zd-autocomplete-title-multibrand {
 #category-tabs {
   list-style-type: none;
   padding: 20px 0 5px 0;
-  margin: 0 10%;
+  margin: 0 auto;
+  max-width: 1160px;
   overflow-x: auto;
   white-space: nowrap;
   background-color: $background_color;
+}
+
+@media (min-width: 1160px){
+  #category-tabs {
+    width: 90%;
+  }
 }
 
 #category-tabs li {
