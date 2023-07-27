@@ -2353,6 +2353,10 @@ zd-autocomplete-title-multibrand {
   color: #202238;
 }
 
+.tab-content img {
+  text-align: center;
+}
+
 .tab-content div {
   display: none;
 }
