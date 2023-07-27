@@ -696,6 +696,9 @@ input[type='submit'][disabled] {
   }
 }
 
+/***** Article Tabs ******/
+
+
 /***** Forms *****/
 .form {
   max-width: 650px;
@@ -2293,6 +2296,77 @@ zd-autocomplete-title-multibrand {
   height: 18px;
 }
 
+
+/* Article Tab Styling */
+.tabs-container {
+  display: block;
+  border: 1px solid #ddd;
+}
+
+.tabs {
+  display: grid;
+}
+
+.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.five {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.six {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.tabs > h3 {
+  background-color: #e4e9fd;
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab-content {
+  background-color: #ffffff;
+  padding: 50px 40px;
+}
+
+.tab-content h4 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #000224;
+}
+
+.tab-content p {
+  text-align: justify;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: #202238;
+}
+
+.tab-content div {
+  display: none;
+}
+
+.tab-content .active-tab {
+  display: block;
+}
+
+.tabs .active-tab {
+  background-color: #ffffff;
+  color: $brand_color;
+  border: 1px solid $brand_color;
+}
+
 .article-sidebar {
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
@@ -2808,10 +2882,6 @@ zd-autocomplete-title-multibrand {
   overflow-x: auto;
   white-space: nowrap;
   background-color: $background_color;
-}
-
-#category-tabs:first-child > a {
-  padding-left: 0;
 }
 
 @media (min-width: 1160px){

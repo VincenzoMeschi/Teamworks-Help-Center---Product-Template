@@ -952,6 +952,22 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+// Tab functionality for article sections
+let tabs = document.querySelectorAll(".tabs h3");
+let tabContents = document.querySelectorAll(".tab-content div");
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    tabContents.forEach((content) => {
+      content.classList.remove("active-tab");
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("active-tab");
+    });
+    tabContents[index].classList.add("active-tab");
+    tabs[index].classList.add("active-tab");
+  });
+});
+
 // // Redirection from Smartabase Zendesk to Teamworks Zendesk
 // var oldIds = ["4411598067481", "15009881706388"];
 //   var newIds = ["5139709475097", "15009883287188"];
