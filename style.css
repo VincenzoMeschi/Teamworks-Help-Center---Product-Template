@@ -2355,7 +2355,7 @@ zd-autocomplete-title-multibrand {
 
 .tab-content img {
   display: block;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .tab-content div {
