@@ -2338,6 +2338,7 @@ zd-autocomplete-title-multibrand {
 .tab-content {
   background-color: #ffffff;
   padding: 50px 40px;
+  margin-bottom: 30px;
 }
 
 .tab-content h4 {
@@ -2347,7 +2348,6 @@ zd-autocomplete-title-multibrand {
 }
 
 .tab-content p {
-  text-align: justify;
   line-height: 1.6;
   letter-spacing: 0.4px;
   color: #202238;
