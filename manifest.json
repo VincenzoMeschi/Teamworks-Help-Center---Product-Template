@@ -1,7 +1,7 @@
 {
-  "name": "Brand Template 1.7",
+  "name": "Brand Template 1.8",
   "author": "Vincenzo Meschi",
-  "version": "1.7",
+  "version": "1.8",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -760,6 +760,81 @@
       ]
     },
     {
+      "label": "nav_links_group_label",
+      "variables": [
+        {
+          "identifier": "first_box_title",
+          "type": "text",
+          "description": "nav_title_description",
+          "label": "nav_title_label",
+          "value": "What's New?"
+        },
+        {
+          "identifier": "first_box_url",
+          "type": "text",
+          "description": "nav_url_description",
+          "label": "nav_url_label",
+          "value": "https://smartabase.zendesk.com/hc/en-us/articles/16738381002772"
+        },
+        {
+          "identifier": "second_box_title",
+          "type": "text",
+          "description": "nav_title_description",
+          "label": "nav_title_label",
+          "value": "Default"
+        },
+        {
+          "identifier": "second_box_url",
+          "type": "text",
+          "description": "nav_url_description",
+          "label": "nav_url_label",
+          "value": "#"
+        },
+        {
+          "identifier": "third_box_title",
+          "type": "text",
+          "description": "nav_title_description",
+          "label": "nav_title_label",
+          "value": "Default"
+        },
+        {
+          "identifier": "third_box_url",
+          "type": "text",
+          "description": "nav_url_description",
+          "label": "nav_url_label",
+          "value": "#"
+        },
+        {
+          "identifier": "fourth_box_title",
+          "type": "text",
+          "description": "nav_title_description",
+          "label": "nav_title_label",
+          "value": "Default"
+        },
+        {
+          "identifier": "fourth_box_url",
+          "type": "text",
+          "description": "nav_url_description",
+          "label": "nav_url_label",
+          "value": "#"
+        },
+        {
+          "identifier": "fifth_box_title",
+          "type": "text",
+          "description": "nav_title_description",
+          "label": "nav_title_label",
+          "value": "Default"
+        },
+        {
+          "identifier": "fifth_box_url",
+          "type": "text",
+          "description": "nav_url_description",
+          "label": "nav_url_label",
+          "value": "#"
+        }
+      ]
+    },
+    {
       "label": "fonts_group_label",
       "variables": [
         {
@@ -952,10 +1027,24 @@
           "label": "hub_logo_label"
         },
         {
+          "identifier": "hub_url",
+          "type": "text",
+          "description": "hub_url_description",
+          "label": "hub_url_label",
+          "value": "https://teamworks.zendesk.com"
+        },
+        {
           "identifier": "communities_logo",
           "type": "file",
           "description": "communities_logo_description",
           "label": "communities_logo_label"
+        },
+        {
+          "identifier": "communities_url",
+          "type": "text",
+          "description": "communities_url_description",
+          "label": "communities_url_label",
+          "value": "https://communities.zendesk.com"
         },
         {
           "identifier": "arms_logo",
@@ -964,10 +1053,24 @@
           "label": "arms_logo_label"
         },
         {
+          "identifier": "arms_url",
+          "type": "text",
+          "description": "arms_url_description",
+          "label": "arms_url_label",
+          "value": "https://arms.intercom.com"
+        },
+        {
           "identifier": "pathways_logo",
           "type": "file",
           "description": "pathways_logo_description",
           "label": "pathways_logo_label"
+        },
+        {
+          "identifier": "pathways_url",
+          "type": "text",
+          "description": "pathways_url_description",
+          "label": "pathways_url_label",
+          "value": "https://pathways.zendesk.com"
         },
         {
           "identifier": "inflcr_logo",
@@ -976,10 +1079,24 @@
           "label": "inflcr_logo_label"
         },
         {
+          "identifier": "inflcr_url",
+          "type": "text",
+          "description": "inflcr_url_description",
+          "label": "inflcr_url_label",
+          "value": "https://inflcr.zendesk.com"
+        },
+        {
           "identifier": "notemeal_logo",
           "type": "file",
           "description": "notemeal_logo_description",
           "label": "notemeal_logo_label"
+        },
+        {
+          "identifier": "notemeal_url",
+          "type": "text",
+          "description": "notemeal_url_description",
+          "label": "notemeal_url_label",
+          "value": "https://notemeal.zendesk.com"
         },
         {
           "identifier": "pulse_logo",
@@ -988,10 +1105,24 @@
           "label": "pulse_logo_label"
         },
         {
+          "identifier": "pulse_url",
+          "type": "text",
+          "description": "pulse_url_description",
+          "label": "pulse_url_label",
+          "value": "https://pulse.zendesk.com"
+        },
+        {
           "identifier": "retain_logo",
           "type": "file",
           "description": "retain_logo_description",
           "label": "retain_logo_label"
+        },
+        {
+          "identifier": "retain_url",
+          "type": "text",
+          "description": "retain_url_description",
+          "label": "retain_url_label",
+          "value": "https://retain.zendesk.com"
         },
         {
           "identifier": "smartabase_logo",
@@ -1000,10 +1131,24 @@
           "label": "smartabase_logo_label"
         },
         {
+          "identifier": "smartabase_url",
+          "type": "text",
+          "description": "smartabase_url_description",
+          "label": "smartabase_url_label",
+          "value": "https://smartabase.zendesk.com"
+        },
+        {
           "identifier": "whistle_logo",
           "type": "file",
           "description": "whistle_logo_description",
           "label": "whistle_logo_label"
+        },
+        {
+          "identifier": "whistle_url",
+          "type": "text",
+          "description": "whistle_url_description",
+          "label": "whistle_url_label",
+          "value": "https://twwhistle.zendesk.com"
         }
       ]
     },

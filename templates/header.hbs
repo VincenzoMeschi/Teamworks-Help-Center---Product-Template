@@ -38,61 +38,61 @@
       <div class='dropdown-menu' role='menu'>
         <ul>
           <li>
-            <a class="menuitemlogo" href="#">
+            <a class="menuitemlogo" href="{{settings.hub_url}}">
               <img src="{{settings.hub_logo}}" alt="" width="7" height="7">
               <span>Hub</span>
             </a>           
           </li>
           <li>
-            <a class="menuitemlogo" href="#">
+            <a class="menuitemlogo" href="{{settings.communities_url}}">
               <img src="{{settings.communities_logo}}" alt="" width="7" height="7">
               <span>Communities</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="#">
+            <a class="menuitemlogo" href="{{settings.arms_url}}">
               <img src="{{settings.arms_logo}}" alt="" width="7" height="7">
               <span>ARMS</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="#">
+            <a class="menuitemlogo" href="{{settings.pathways_url}}">
               <img src="{{settings.pathways_logo}}" alt="" width="7" height="7">
               <span>Pathways</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="#">
+            <a class="menuitemlogo" href="{{settings.inflcr_url}}">
               <img src="{{settings.inflcr_logo}}" alt="" width="7" height="7">
               <span>INFLCR</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="#">
+            <a class="menuitemlogo" href="{{settings.notemeal_url}}">
               <img src="{{settings.notemeal_logo}}" alt="" width="7" height="7">
               <span>Notemeal</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="#">
+            <a class="menuitemlogo" href="{{settings.pulse_url}}">
               <img src="{{settings.pulse_logo}}" alt="" width="7" height="7">
               <span>Pulse</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="#">
+            <a class="menuitemlogo" href="{{settings.retain_url}}">
               <img src="{{settings.retain_logo}}" alt="" width="7" height="7">
               <span>Retain</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="#">
+            <a class="menuitemlogo" href="{{settings.whistle_url}}">
               <img src="{{settings.whistle_logo}}" alt="" width="7" height="7">
               <span>Whistle</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="#">
+            <a class="menuitemlogo" href="{{settings.smartabase_url}}">
               <img src="{{settings.smartabase_logo}}" alt="" width="7" height="7">
               <span>Smartabase</span>
             </a>
@@ -125,7 +125,11 @@
       </button>
       <nav class='user-nav' id='user-nav'>
         {{link 'new_request' class='submit-a-request'}}
-        <a href="https://smartabase.zendesk.com/hc/en-us/articles/16738381002772">What's new?</a>
+        <a href="{{settings.first_box_url}}" class="nav-item">{{settings.first_box_title}}</a>
+        <a href="{{settings.second_box_url}}" class="nav-item">{{settings.second_box_title}}</a>
+        <a href="{{settings.third_box_url}}" class="nav-item">{{settings.third_box_title}}</a>
+        <a href="{{settings.fourth_box_url}}" class="nav-item">{{settings.fourth_box_title}}</a>
+        <a href="{{settings.fifth_box_url}}" class="nav-item">{{settings.fifth_box_title}}</a>
       </nav>
       {{#if alternative_locales}}
         <div class='header-language-selector'>

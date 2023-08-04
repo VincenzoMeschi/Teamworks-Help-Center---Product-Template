@@ -942,6 +942,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Hide blocks-item if blocks-item-title = "Category 1"
 document.addEventListener('DOMContentLoaded', function() {
+  var nav_item = document.getElementsByClassName("nav-item");
+
+  for (var i = 0; i < nav_item.length; i++) {
+    if (nav_item[i].innerHTML == "Default") {
+      nav_item[i].style.display = "none";
+    }
+  }
+});
+
+// Hide blocks-item if blocks-item-title = "Category 1"
+document.addEventListener('DOMContentLoaded', function() {
   var blocksItemTitle = document.getElementsByClassName("blocks-item-title");
   var blocksItem = document.getElementsByClassName("blocks-item");
 

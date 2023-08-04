@@ -837,7 +837,7 @@ input[type='submit'][disabled] {
 }
 
 .logo img {
-  width: 159px;
+  width: auto;
   height: 40px;
   vertical-align: middle;
 }
