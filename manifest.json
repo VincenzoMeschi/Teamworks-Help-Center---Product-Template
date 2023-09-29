@@ -1,7 +1,7 @@
 {
   "name": "Brand Template 1.8",
   "author": "Vincenzo Meschi",
-  "version": "1.8",
+  "version": "1.8.1",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -998,6 +998,12 @@
       "variables": [
         {
           "identifier": "logo",
+          "type": "file",
+          "description": "logo_description",
+          "label": "logo_label"
+        },
+        {
+          "identifier": "logo_black",
           "type": "file",
           "description": "logo_description",
           "label": "logo_label"
