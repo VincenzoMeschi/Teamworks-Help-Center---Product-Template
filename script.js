@@ -962,22 +962,33 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 });
+// Get all tab containers
+let tabContainers = document.querySelectorAll(".tab-container");  // Assuming a class name, adjust as necessary
 
-// Tab functionality for article sections
-let tabs = document.querySelectorAll(".tabs h3");
-let tabContents = document.querySelectorAll(".tab-content div");
-tabs.forEach((tab, index) => {
-  tab.addEventListener("click", () => {
-    tabContents.forEach((content) => {
-      content.classList.remove("active-tab");
+tabContainers.forEach((container) => {
+  // Get tabs and tab contents within the current container
+  let tabs = container.querySelectorAll(".tabs h3");
+  let tabContents = container.querySelectorAll(".tab-content div");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      // Remove active class from all tab contents in the current container
+      tabContents.forEach((content) => {
+        content.classList.remove("active-tab");
+      });
+
+      // Remove active class from all tabs in the current container
+      tabs.forEach((tab) => {
+        tab.classList.remove("active-tab");
+      });
+
+      // Add active class to clicked tab and its corresponding content
+      tabContents[index].classList.add("active-tab");
+      tabs[index].classList.add("active-tab");
     });
-    tabs.forEach((tab) => {
-      tab.classList.remove("active-tab");
-    });
-    tabContents[index].classList.add("active-tab");
-    tabs[index].classList.add("active-tab");
   });
 });
+
 
 // // Redirection from Smartabase Zendesk to Teamworks Zendesk
 // var oldIds = ["4411598067481", "15009881706388"];
