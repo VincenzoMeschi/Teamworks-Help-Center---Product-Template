@@ -972,7 +972,7 @@ tabContainers.forEach((container) => {
 
   tabs.forEach((tab, index) => {
     tab.addEventListener("click", () => {
-      // Find the currently active tab and content in the container and remove the active-tab class
+      // Find the currently active tab and content in THIS container and remove the active-tab class
       let activeTab = container.querySelector(".tabs > h3.active-tab");
       if (activeTab) {
         activeTab.classList.remove("active-tab");
@@ -988,7 +988,6 @@ tabContainers.forEach((container) => {
     });
   });
 });
-
 
 // // Redirection from Smartabase Zendesk to Teamworks Zendesk
 // var oldIds = ["4411598067481", "15009881706388"];
