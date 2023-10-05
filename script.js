@@ -963,12 +963,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 // Get all tab containers
-let tabContainers = document.querySelectorAll(".tab-container");  // Assuming a class name, adjust as necessary
+let tabContainers = document.querySelectorAll(".tabs-container");
 
 tabContainers.forEach((container) => {
   // Get tabs and tab contents within the current container
-  let tabs = container.querySelectorAll(".tabs h3");
-  let tabContents = container.querySelectorAll(".tab-content div");
+  let tabs = container.querySelectorAll(".tabs > h3");  // Direct child h3 elements under .tabs
+  let tabContents = container.querySelectorAll(".tab-content > div");  // Direct child div elements under .tab-content
 
   tabs.forEach((tab, index) => {
     tab.addEventListener("click", () => {
@@ -984,10 +984,11 @@ tabContainers.forEach((container) => {
 
       // Add active class to clicked tab and its corresponding content
       tabContents[index].classList.add("active-tab");
-      tabs[index].classList.add("active-tab");
+      tab.classList.add("active-tab");
     });
   });
 });
+
 
 
 // // Redirection from Smartabase Zendesk to Teamworks Zendesk
