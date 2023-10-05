@@ -967,20 +967,20 @@ let tabContainers = document.querySelectorAll(".tabs-container");
 
 tabContainers.forEach((container) => {
   // Get tabs and tab contents within the current container
-  let tabs = container.querySelectorAll(".tabs > h3");  // Direct child h3 elements under .tabs
-  let tabContents = container.querySelectorAll(".tab-content > div");  // Direct child div elements under .tab-content
+  let tabs = container.querySelectorAll(".tabs > h3");
+  let tabContents = container.querySelectorAll(".tab-content > div");
 
   tabs.forEach((tab, index) => {
     tab.addEventListener("click", () => {
-      // Remove active class from all tab contents in the current container
-      tabContents.forEach((content) => {
-        content.classList.remove("active-tab");
-      });
-
-      // Remove active class from all tabs in the current container
-      tabs.forEach((tab) => {
-        tab.classList.remove("active-tab");
-      });
+      // Find the currently active tab and content in the container and remove the active-tab class
+      let activeTab = container.querySelector(".tabs > h3.active-tab");
+      if (activeTab) {
+        activeTab.classList.remove("active-tab");
+      }
+      let activeContent = container.querySelector(".tab-content > div.active-tab");
+      if (activeContent) {
+        activeContent.classList.remove("active-tab");
+      }
 
       // Add active class to clicked tab and its corresponding content
       tabContents[index].classList.add("active-tab");
@@ -988,7 +988,6 @@ tabContainers.forEach((container) => {
     });
   });
 });
-
 
 
 // // Redirection from Smartabase Zendesk to Teamworks Zendesk
