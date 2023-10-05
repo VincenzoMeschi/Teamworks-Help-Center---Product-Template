@@ -147,11 +147,14 @@
   // Highlight the current category
   // Since the categoryId is no longer available in the categoriesFromSettings data, 
   // we'll use the category URL to find the current active category
-  var currentCategoryUrl = "/hc/categories/{{category.id}}"; // based on typical Zendesk URL structure
+  // https://teamworks.zendesk.com/hc/en-us/categories/10828435911956-INFLCR
+  // Assuming the URL structure is consistent:
+  var currentCategoryUrl = window.location.href;  // This gets the current page's URL
+
   var currentCategoryLink = document.querySelector('a[href="' + currentCategoryUrl + '"]');
-  if (currentCategoryLink) { // check if the link exists before adding class
-      currentCategoryLink.parentElement.className += ' activetab'; // add the active class to the parent list item
-  }
+  if (currentCategoryLink) { 
+      currentCategoryLink.parentElement.classList.add('activetab'); 
+  } 
 
 
 </script>
