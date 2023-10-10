@@ -2533,7 +2533,7 @@ zd-autocomplete-title-multibrand {
 .article-votes {
   padding: 30px 0;
   text-align: center;
-  background-image: url(//theme.zdassets.com/theme_assets/10612603/4edc123c6d35b69a01d93dce4e266686d1bc8544.png);
+  background-image: $assets-article-vote-bg-png;
   background-color: #1d1e1e;
   background-size: 100%;
   color: #FFF;
