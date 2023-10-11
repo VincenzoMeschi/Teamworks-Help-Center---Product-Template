@@ -2466,7 +2466,7 @@ zd-autocomplete-title-multibrand {
 }
 
 .tab-content img {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
 }
 
