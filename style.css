@@ -2065,7 +2065,7 @@ zd-autocomplete-title-multibrand {
   background-size: cover;
   height: 543px;
   width: 100%;
-  margin: 200px 0 -1rem;
+  margin-top: 50px; 
 }
 
 .banner-inner {
