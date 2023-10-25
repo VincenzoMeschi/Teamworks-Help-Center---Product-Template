@@ -1,7 +1,7 @@
 {
   "name": "Brand Template 1.8",
   "author": "Vincenzo Meschi",
-  "version": "1.8.11",
+  "version": "1.8.12",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -49,6 +49,55 @@
           "description": "background_color_description",
           "label": "background_color_label",
           "value": "#FFFFFF"
+        },
+        {
+          "identifier": "arrow_color",
+          "type": "color",
+          "description": "arrow_color_description",
+          "label": "arrow_color_label",
+          "value": "#FFC0CB"
+        },
+        {
+          "identifier": "tip_main_color",
+          "type": "color",
+          "description": "article_main_color_description",
+          "label": "article_main_color_label",
+          "value": "#e9fbfc"
+        },
+        {
+          "identifier": "tip_accent_color",
+          "type": "color",
+          "description": "article_accent_color_description",
+          "label": "article_accent_color_label",
+          "value": "#28dae1"
+        },
+        {
+          "identifier": "note_main_color",
+          "type": "color",
+          "description": "article_main_color_description",
+          "label": "article_main_color_label",
+          "value": "#FFC0CB"
+        },
+        {
+          "identifier": "note_accent_color",
+          "type": "color",
+          "description": "article_accent_color_description",
+          "label": "article_accent_color_label",
+          "value": "#FFC0CB"
+        },
+        {
+          "identifier": "warning_main_color",
+          "type": "color",
+          "description": "article_main_color_description",
+          "label": "article_main_color_label",
+          "value": "#FFC0CB"
+        },
+        {
+          "identifier": "warning_accent_color",
+          "type": "color",
+          "description": "article_accent_color_description",
+          "label": "article_accent_color_label",
+          "value": "#FFC0CB"
         }
       ]
     },

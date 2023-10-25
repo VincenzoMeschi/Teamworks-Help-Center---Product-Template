@@ -36,9 +36,11 @@
       </div>
     </div>
     <div class="popular-searches">
-      <span>
-        Popular Searches:
-      </span>
+      {{#if settings.popular_search_1}}
+        <span>
+          Popular Searches:
+        </span>
+      {{/if}}
       {{#if settings.popular_search_1}}
         <a class="popular-search-item">
           {{settings.popular_search_1}}

@@ -1397,7 +1397,6 @@ input[type='submit'][disabled] {
   background-image: url($homepage_background_image);
   background-position: center;
   background-size: cover;
-  height: 700px;
   padding: 0 20px;
   text-align: center;
   width: 100%;
@@ -1413,7 +1412,7 @@ input[type='submit'][disabled] {
 .hero-inner {
   display: flex;
   flex-direction: column;
-  padding: 155px 200px;
+  padding: 55px 200px;
   max-width: 100%;
   margin: 0;
   align-items: center;
@@ -1651,7 +1650,6 @@ zd-autocomplete-title-multibrand {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  padding: 30px;  
 }
 
 .blocks-item::after {
@@ -1783,7 +1781,7 @@ zd-autocomplete-title-multibrand {
 
 .blocks-item-link {
   color: $brand_color;
-  padding: 20px 30px;
+  padding: 35px 30px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -1826,7 +1824,7 @@ zd-autocomplete-title-multibrand {
 
 /***** Homepage *****/
 .section {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
@@ -2612,7 +2610,7 @@ zd-autocomplete-title-multibrand {
 
 .scroll-to-top-container {
   height: 64px;
-  width: 144px;
+  width: 160px;
   position: fixed;
   bottom: 8px;
   right: 20rem;
@@ -2661,8 +2659,13 @@ zd-autocomplete-title-multibrand {
   color: #575757;
 }
 
-.scroll-to-top-container button svg path {
-  fill: $background_color;
+.scroll-to-top-container button svg path.change-stroke {
+  stroke: $arrow_color;
+}
+
+.scroll-to-top-container button span {
+  height: 1.15rem;
+  margin-right: 2px;
 }
 
 /***** Attachments *****/
@@ -5760,20 +5763,20 @@ html[dir='rtl'] .notification-left-aligned {
 
 /* Coloured blockquotes */
 .tip {
-  background-color: #e9fbfc;
-  border-left: #28dae1 solid 4px;
+  background-color: $tip_main_color
+  border-left: $tip_accent_color #28dae1 solid 4px;
   font-size: 18px;
   padding: 15px;
 }
 .note {
-  background-color: #e5f9ec;
-  border-left: #00c848 solid 4px;
+  background-color: $note_main_color;
+  border-left: $note_accent_color solid 4px;
   font-size: 18px;
   padding: 15px;
 }
 .warning {
-  background-color: #fff6e5;
-  border-left: #ffaa00 solid 4px;
+  background-color: $warning_main_color;
+  border-left: $warning_accent_color solid 4px;
   font-size: 18px;
   padding: 15px;
 }

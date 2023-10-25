@@ -910,17 +910,17 @@ document.addEventListener('DOMContentLoaded', async function () {
     `
 
     // Append current alert to the alertbox container
-    document.querySelector('.alertbox').insertAdjacentHTML('beforeend', html)
+    // document.querySelector('.alertbox').insertAdjacentHTML('beforeend', html)
   }
 })
 
-document.addEventListener('click', function (event) {
-  // Close alertbox
-  if (event.target.matches('.ns-close')) {
-    event.preventDefault()
-    event.target.parentElement.remove()
-  }
-})
+// document.addEventListener('click', function (event) {
+//   // Close alertbox
+//   if (event.target.matches('.ns-close')) {
+//     event.preventDefault()
+//     event.target.parentElement.remove()
+//   }
+// })
 
 // Expand and collapse sections within articles //
 document.addEventListener('DOMContentLoaded', function() {
