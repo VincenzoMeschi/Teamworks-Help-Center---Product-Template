@@ -1,7 +1,7 @@
 {
   "name": "Brand Template 1.8",
   "author": "Vincenzo Meschi",
-  "version": "1.8.14",
+  "version": "1.8.15",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -1291,7 +1291,7 @@
           "identifier": "popular_search_3",
           "type": "text",
           "description": "Third popular search option.",
-          "label": "Popular Search 1",
+          "label": "Popular Search 3",
           "value": ""
         },
         {
