@@ -2128,7 +2128,6 @@ zd-autocomplete-title-multibrand {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 }
 
@@ -2150,7 +2149,7 @@ zd-autocomplete-title-multibrand {
 }
 
 @media (min-width: 768px) {
-  .section-tree .section {
+  .category-content .section {
     flex: 0 0 40%;
     margin-bottom: 70px;
     /* Two columns for tablet and desktop. Leaving 5% separation between columns */
