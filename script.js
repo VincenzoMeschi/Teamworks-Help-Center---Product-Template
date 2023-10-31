@@ -868,9 +868,12 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }
   };
+
   document.addEventListener('DOMContentLoaded', async function () {
+
+
   // Article label to be considered for the alerts
-  const label = 'alert'
+  const label = (window.location.href === "/hc/en-us") ? 'mainalert' : 'alert'
 
   // Show the article body within the alertbox? (Boolean: true/false)
   const showArticleBody = true
@@ -910,17 +913,17 @@ document.addEventListener('DOMContentLoaded', async function () {
     `
 
     // Append current alert to the alertbox container
-    // document.querySelector('.alertbox').insertAdjacentHTML('beforeend', html)
+    document.querySelector('.alertbox').insertAdjacentHTML('beforeend', html)
   }
 })
 
-// document.addEventListener('click', function (event) {
-//   // Close alertbox
-//   if (event.target.matches('.ns-close')) {
-//     event.preventDefault()
-//     event.target.parentElement.remove()
-//   }
-// })
+document.addEventListener('click', function (event) {
+  // Close alertbox
+  if (event.target.matches('.ns-close')) {
+    event.preventDefault()
+    event.target.parentElement.remove()
+  }
+})
 
 // Expand and collapse sections within articles //
 document.addEventListener('DOMContentLoaded', function() {
