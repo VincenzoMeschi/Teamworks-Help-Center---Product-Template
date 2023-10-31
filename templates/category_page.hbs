@@ -13,14 +13,13 @@
   </nav>
 
   <div class="category-container">
-    <div class="category-content">
-      <header class="page-header">
-        <h1>{{category.name}}</h1>
-        {{#if category.description}}
+    <header class="page-header">
+      <h1>{{category.name}}</h1>
+      {{#if category.description}}
 <!--           <p class="page-header-description">{{category.description}}</p> -->
-        {{/if}}
-      </header>
-
+      {{/if}}
+    </header>
+    <div class="category-content">
         {{#each sections}}
           <section class="section">
             <h2 class="section-tree-title">

@@ -1412,7 +1412,7 @@ input[type='submit'][disabled] {
 .hero-inner {
   display: flex;
   flex-direction: column;
-  padding: 55px 200px;
+  padding: 35px 200px;
   max-width: 100%;
   margin: 0;
   align-items: center;
@@ -1453,7 +1453,7 @@ input[type='submit'][disabled] {
 
 .hero-search-bar input[type='search'] {
   width: 550px;
-  height: 72px;
+  height: 52px;
   border: 0;
   border-left: $brand_color 6px solid;
   padding: 0 24px;
@@ -1479,9 +1479,9 @@ input[type='submit'][disabled] {
 
 .hero-search-icon {
   width: 65px;
-  height: 72px;
+  height: 52px;
   background-color: $brand_color;
-  padding: 24px;
+  padding: 17px;
   cursor: pointer;
 }
 
@@ -2111,17 +2111,23 @@ zd-autocomplete-title-multibrand {
 
 /***** Category pages *****/
 .category-container {
-  display: flex;
-  justify-content: flex-end;
+  display: block; 
 }
 
 .category-content {
   flex: 1;
 }
 
+.category-container header {
+  display: block;
+  margin-bottom: 50px;
+}
+
 @media (min-width: 1024px) {
   .category-content {
-    flex: 0 0 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -2144,7 +2150,8 @@ zd-autocomplete-title-multibrand {
 
 @media (min-width: 768px) {
   .section-tree .section {
-    flex: 0 0 45%;
+    flex: 0 0 40%;
+    margin-bottom: 70px;
     /* Two columns for tablet and desktop. Leaving 5% separation between columns */
   }
 }
@@ -2995,6 +3002,9 @@ zd-autocomplete-title-multibrand {
 }
 
 #category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   list-style-type: none;
   padding: 20px 0 5px 0;
   margin: 0 auto;
@@ -5680,6 +5690,17 @@ html[dir='rtl'] .notification-left-aligned {
   margin-right: 5px;
   align-items: center;
   justify-content: center;
+}
+
+#campsarrow img {
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+#campsarrow {
+  padding-right: 20px;
 }
 
 .menuitmelogo span {

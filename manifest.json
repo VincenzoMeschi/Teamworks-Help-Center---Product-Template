@@ -1,7 +1,7 @@
 {
   "name": "Brand Template 1.8",
   "author": "Vincenzo Meschi",
-  "version": "1.8.15",
+  "version": "1.8.16",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -1113,6 +1113,19 @@
           "description": "arms_url_description",
           "label": "arms_url_label",
           "value": "https://arms.intercom.com"
+        },
+        {
+          "identifier": "arms_camps_logo",
+          "type": "file",
+          "description": "arms_logo_description",
+          "label": "arms_logo_label"
+        },
+        {
+          "identifier": "arms_camps_url",
+          "type": "text",
+          "description": "arms_url_description",
+          "label": "arms_url_label",
+          "value": "https://armscamps.com/"
         },
         {
           "identifier": "pathways_logo",
