@@ -873,7 +873,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 
   // Article label to be considered for the alerts
-  const label = (window.location.href === "/hc/en-us") ? 'mainalert' : 'alert'
+  const label = (window.location.pathname === "/hc/en-us") ? 'mainalert' : 'alert'
 
   // Show the article body within the alertbox? (Boolean: true/false)
   const showArticleBody = true
