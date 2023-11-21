@@ -1228,18 +1228,6 @@
           "type": "file",
           "description": "homepage_background_image_description",
           "label": "homepage_background_image_label"
-        },
-        {
-          "identifier": "community_background_image",
-          "type": "file",
-          "description": "community_background_image_description",
-          "label": "community_background_image_label"
-        },
-        {
-          "identifier": "community_image",
-          "type": "file",
-          "description": "community_image_description",
-          "label": "community_image_label"
         }
       ]
     },
@@ -1353,13 +1341,6 @@
           "description": "Button link for banner section.",
           "label": "Banner button link",
           "value": "https://academy.fusionsport.com"
-        },
-        {
-          "identifier": "show_recent_activity",
-          "type": "checkbox",
-          "description": "recent_activity_description",
-          "label": "recent_activity_label",
-          "value": true
         },
         {
           "identifier": "show_arms_logo",
@@ -1548,48 +1529,6 @@
           "description": "The description to display in the chat tile",
           "label": "Chat tile description",
           "value": "Have a question? Need a tip? Chat with us."
-        },
-        {
-          "identifier": "use_web_widget",
-          "type": "checkbox",
-          "description": "Use the Web Widget instead of the Messaging Widget",
-          "label": "Use Web Widget",
-          "value": false
-        },
-        {
-          "identifier": "phone_tile_title",
-          "type": "text",
-          "description": "The title to display in the phone tile",
-          "label": "Phone tile title",
-          "value": ""
-        },
-        {
-          "identifier": "phone_tile_description",
-          "type": "text",
-          "description": "The description to display in the phone tile",
-          "label": "Phone tile description",
-          "value": ""
-        },
-        {
-          "identifier": "phone_number_au",
-          "type": "text",
-          "description": "The phone number for the AU office",
-          "label": "Phone number (AU)",
-          "value": ""
-        },
-        {
-          "identifier": "phone_number_us",
-          "type": "text",
-          "description": "The phone number for the US office",
-          "label": "Phone number (US)",
-          "value": ""
-        },
-        {
-          "identifier": "phone_number_uk",
-          "type": "text",
-          "description": "The phone number for the UK office",
-          "label": "Phone number (UK)",
-          "value": ""
         }
       ]
     },
