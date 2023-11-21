@@ -1350,10 +1350,10 @@
           "value": false
         },
         {
-          "identifier": "show_communitites_logo",
+          "identifier": "show_communities_logo",
           "type": "checkbox",
-          "description": "communitites_logo_description",
-          "label": "communitites_logo_label",
+          "description": "communities_logo_description",
+          "label": "communities_logo_label",
           "value": false
         },
         {
@@ -1529,6 +1529,13 @@
           "description": "The description to display in the chat tile",
           "label": "Chat tile description",
           "value": "Have a question? Need a tip? Chat with us."
+        },
+        {
+          "identifier": "use_web_widget",
+          "type": "checkbox",
+          "description": "Use the Web Widget instead of the Messaging Widget",
+          "label": "Use Web Widget",
+          "value": false
         }
       ]
     },
