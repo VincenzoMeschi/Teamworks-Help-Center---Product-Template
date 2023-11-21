@@ -296,6 +296,35 @@
 
 <div class="banner-container">
   <div class="banner-inner">
+    <div class="banner-logo-line">
+      {{#if settings.show_arms_logo}}
+        <img src="{{settings.arms_logo}}" />
+      {{/if}}
+      {{#if settings.show_communities_logo}}
+        <img src="{{settings.communities_logo}}" />
+      {{/if}}
+      {{#if settings.show_hub_logo}}
+        <img src="{{settings.hub_logo}}" >
+      {{/if}}
+      {{#if settings.show_inflcr_logo}}
+        <img src="{{settings.inflcr_logo}}" >
+      {{/if}}
+      {{#if settings.show_notemeal_logo}}
+        <img src="{{settings.notemeal_logo}}" >
+      {{/if}}
+      {{#if settings.show_pathways_logo}}
+        <img src="{{settings.pathways_logo}}" >
+      {{/if}}
+      {{#if settings.show_retain_logo}}
+        <img src="{{settings.retain_logo}}" >
+      {{/if}}
+      {{#if settings.show_smartabase_logo}}
+        <img src="{{settings.smartabase_logo}}" >
+      {{/if}}
+      {{#if settings.show_whistle_logo}}
+        <img src="{{settings.whistle_logo}}" >
+      {{/if}}
+    </div>
     <h1 class="banner-title">{{ settings.banner_title }}</h1>
     <p class="banner-description">
       {{ settings.banner_description }}

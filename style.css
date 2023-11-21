@@ -2075,6 +2075,18 @@ zd-autocomplete-title-multibrand {
   color: $background_color;
 }
 
+.banner-logo-line {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.banner-logo-line img {
+  display: block;
+  margin-right: 20px;
+  height: 40px;
+}
+
 .banner-title {
   font-size: 35px;
   margin: 0;

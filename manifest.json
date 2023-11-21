@@ -1,7 +1,7 @@
 {
-  "name": "Brand Template 1.8.22",
+  "name": "Brand Template 1.8.23",
   "author": "Vincenzo Meschi",
-  "version": "1.8.22",
+  "version": "1.8.23",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -1360,6 +1360,69 @@
           "description": "recent_activity_description",
           "label": "recent_activity_label",
           "value": true
+        },
+        {
+          "identifier": "show_arms_logo",
+          "type": "checkbox",
+          "description": "arms_logo_description",
+          "label": "arms_logo_label",
+          "value": false
+        },
+        {
+          "identifier": "show_communitites_logo",
+          "type": "checkbox",
+          "description": "communitites_logo_description",
+          "label": "communitites_logo_label",
+          "value": false
+        },
+        {
+          "identifier": "show_hub_logo",
+          "type": "checkbox",
+          "description": "hub_logo_description",
+          "label": "hub_logo_label",
+          "value": false
+        },
+        {
+          "identifier": "show_inflcr_logo",
+          "type": "checkbox",
+          "description": "inflcr_logo_description",
+          "label": "inflcr_logo_label",
+          "value": false
+        },
+        {
+          "identifier": "show_notemeal_logo",
+          "type": "checkbox",
+          "description": "notemeal_logo_description",
+          "label": "notemeal_logo_label",
+          "value": false
+        },
+        {
+          "identifier": "show_pathways_logo",
+          "type": "checkbox",
+          "description": "pathways_logo_description",
+          "label": "pathways_logo_label",
+          "value": false
+        },
+        {
+          "identifier": "show_retain_logo",
+          "type": "checkbox",
+          "description": "retain_logo_description",
+          "label": "retain_logo_label",
+          "value": false
+        },
+        {
+          "identifier": "show_smartabase_logo",
+          "type": "checkbox",
+          "description": "smartabase_logo_description",
+          "label": "smartabase_logo_label",
+          "value": false
+        },
+        {
+          "identifier": "show_whistle_logo",
+          "type": "checkbox",
+          "description": "whistle_logo_description",
+          "label": "whistle_logo_label",
+          "value": false
         }
       ]
     },
