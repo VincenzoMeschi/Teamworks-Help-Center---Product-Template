@@ -1,7 +1,7 @@
 {
-  "name": "Brand Template 1.8.26",
+  "name": "Brand Template 1.8.27",
   "author": "Vincenzo Meschi",
-  "version": "1.8.26",
+  "version": "1.8.27",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -1387,8 +1387,8 @@
         {
           "identifier": "show_pulse_logo",
           "type": "checkbox",
-          "description": "pathways_logo_description",
-          "label": "pathways_logo_label",
+          "description": "pulse_logo_description",
+          "label": "pulse_logo_label",
           "value": false
         },
         {
