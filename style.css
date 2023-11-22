@@ -2079,12 +2079,13 @@ zd-autocomplete-title-multibrand {
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin-bottom: 30px;
 }
 
 .banner-logo-line img {
   display: block;
-  margin-right: 20px;
-  height: 40px;
+  margin-right: 5px;
+  height: 30px;
 }
 
 .banner-title {

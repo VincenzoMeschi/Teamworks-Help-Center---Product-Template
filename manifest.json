@@ -1385,6 +1385,13 @@
           "value": false
         },
         {
+          "identifier": "show_pulse_logo",
+          "type": "checkbox",
+          "description": "pathways_logo_description",
+          "label": "pathways_logo_label",
+          "value": false
+        },
+        {
           "identifier": "show_retain_logo",
           "type": "checkbox",
           "description": "retain_logo_description",
