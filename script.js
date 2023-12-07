@@ -1071,6 +1071,17 @@ const inflcrRedirects = {
 	18008994822420: "20203852626580",
 	18009352120724: "20203916567060",
 	18009068887316: "20203937278356",
+	18692202453268: "17957894823956",
+	18692086357140: "17957911932692",
+	18691850794516: "17957913263380",
+	18691779376916: "17957925041556",
+	18691547908500: "17957898704916",
+	18691103771924: "17957898117652",
+	18009068887316: "20203937278356",
+	18009352120724: "20203916567060",
+	18008994822420: "20203852626580",
+	18008734628244: "20203829941140",
+	18008621667988: "20203782552980",
 };
 
 const notemealRedirects = {
@@ -1170,3 +1181,25 @@ if (
 			whistleRedirects[currentArticleID];
 	}
 }
+
+if (window.location.pathname.slice(10, 20) === "categories") {
+	if (window.location.pathname.slice(21, 33) === "108284359119") {
+		window.location.href = "https://inflcr.zendesk.com/hc/en-us/";
+	} else if (window.location.pathname.slice(21, 33) === "360002589151") {
+		window.location.href = "https://notemeal.zendesk.com/hc/en-us/";
+	} else if (window.location.pathname.slice(21, 33) === "141704467125") {
+		window.location.href = "https://twwhistle.zendesk.com/hc/en-us/";
+	}
+}
+
+// INFLCR: Category ID = 10828435911956
+// Notemeal: Category ID = 360002589151
+// Whistle: Category ID = 14170446712596
+// "https://teamworks.zendesk.com/hc/en-us/categories/10828435911956-INFLCR"
+
+console.log(
+	"https://teamworks.zendesk.com/hc/en-us/categories/10828435911956-INFLCR".slice(
+		10,
+		20
+	)
+);
