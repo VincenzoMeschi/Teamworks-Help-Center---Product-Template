@@ -1177,7 +1177,7 @@ if (
 			notemealRedirects[currentArticleID];
 	} else if (currentArticleID in whistleRedirects) {
 		window.location.href =
-			"https://whistle.zendesk.com/hc/en-us/articles/" +
+			"https://twwhistle.zendesk.com/hc/en-us/articles/" +
 			whistleRedirects[currentArticleID];
 	}
 }
@@ -1191,11 +1191,6 @@ if (window.location.pathname.slice(10, 20) === "categories") {
 		window.location.href = "https://twwhistle.zendesk.com/hc/en-us/";
 	}
 }
-
-// INFLCR: Category ID = 10828435911956
-// Notemeal: Category ID = 360002589151
-// Whistle: Category ID = 14170446712596
-// "https://teamworks.zendesk.com/hc/en-us/categories/10828435911956-INFLCR"
 
 console.log(
 	"https://teamworks.zendesk.com/hc/en-us/categories/10828435911956-INFLCR".slice(
