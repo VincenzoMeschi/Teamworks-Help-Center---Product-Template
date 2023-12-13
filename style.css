@@ -5798,7 +5798,7 @@ html[dir='rtl'] .notification-left-aligned {
 
 /* Coloured blockquotes */
 .tip {
-  background-color: $tip_main_color
+  background-color: $tip_main_color;
   border-left: $tip_accent_color #28dae1 solid 4px;
   font-size: 18px;
   padding: 15px;
