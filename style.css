@@ -5973,9 +5973,18 @@ html[dir='rtl'] .notification-left-aligned {
 	transform: translate(-50%,-50%) rotate(-45deg);
 }
 
+.ns-box-inner {
+    display: flex;
+    align-items: center;
+}
+
 .ns-box-inner i {
     color: #fff;
     font-size: 3.8em;
+}
+
+.megaphone {
+  margin-left: 10px;
 }
 
 .megaphone:before {
