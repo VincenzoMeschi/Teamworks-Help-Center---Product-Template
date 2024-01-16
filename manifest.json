@@ -1089,17 +1089,17 @@
 					"value": "https://teamworks.zendesk.com"
 				},
 				{
-					"identifier": "communities_logo",
+					"identifier": "trac_logo",
 					"type": "file",
-					"description": "communities_logo_description",
-					"label": "communities_logo_label"
+					"description": "trac_logo_description",
+					"label": "trac_logo_label"
 				},
 				{
-					"identifier": "communities_url",
+					"identifier": "trac_url",
 					"type": "text",
-					"description": "communities_url_description",
-					"label": "communities_url_label",
-					"value": "https://communities.zendesk.com"
+					"description": "trac_url_description",
+					"label": "trac_url_label",
+					"value": "https://helpdesk.frontrush.com"
 				},
 				{
 					"identifier": "arms_logo",
