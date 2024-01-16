@@ -1099,7 +1099,7 @@
 					"type": "text",
 					"description": "trac_url_description",
 					"label": "trac_url_label",
-					"value": "https://helpdesk.frontrush.com"
+					"value": "https://helpdesk.frontrush.com/fr-trac-inventory-management#next-gen-softwarehttps://helpdesk.frontrush.com"
 				},
 				{
 					"identifier": "arms_logo",
