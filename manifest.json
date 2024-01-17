@@ -1,7 +1,7 @@
 {
-	"name": "Brand Template 1.8.35",
+	"name": "Brand Template 1.8.36",
 	"author": "Vincenzo Meschi",
-	"version": "1.8.35",
+	"version": "1.8.36",
 	"api_version": 2,
 	"default_locale": "en-us",
 	"settings": [
@@ -1350,10 +1350,10 @@
 					"value": false
 				},
 				{
-					"identifier": "show_communities_logo",
+					"identifier": "show_trac_logo",
 					"type": "checkbox",
-					"description": "communities_logo_description",
-					"label": "communities_logo_label",
+					"description": "trac_logo_description",
+					"label": "trac_logo_label",
 					"value": false
 				},
 				{
