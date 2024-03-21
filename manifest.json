@@ -891,7 +891,7 @@
                     "type": "list",
                     "description": "heading_font_description",
                     "label": "heading_font_label",
-                    "value": "'Manrope', Arial'",
+                    "value": "Manrope",
                     "options": [
                         {
                             "label": "Manrope",
@@ -908,11 +908,11 @@
                     "type": "list",
                     "description": "text_font_description",
                     "label": "text_font_label",
-                    "value": "'Manrope', Arial",
+                    "value": "Manrope",
                     "options": [
                         {
                             "label": "Manrope",
-                            "value": "'Manrope', Arial"
+                            "value": "Manrope"
                         },
                         {
                             "label": "Arial",
