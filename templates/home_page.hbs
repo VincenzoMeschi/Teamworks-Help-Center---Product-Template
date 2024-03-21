@@ -1,68 +1,82 @@
-{{!-- for each category in the category object, append it to the globalCategories object in script.js --}}
+{{! for each category in the category object, append it to the globalCategories object in script.js }}
 <script type="text/javascript">
-  {{#each categories}}
-    var categoryName = "{{name}}";
-    var categoryId = "category-" + "{{id}}";
-    var categoryUrl = "{{url}}";  // Assuming each category has a url property
-
-    // Create a JavaScript object to store both the name and url
-    var categoryData = {
-      name: categoryName,
-      url: categoryUrl
-    };
-    
-    // Convert the object to a JSON string for storage in localStorage
-    var categoryDataString = JSON.stringify(categoryData);
-
-    // Store the string in localStorage
-    localStorage.setItem(categoryId, categoryDataString);
-  {{/each}}
+    {{#each categories}}
+        var categoryName = "{{name}}"; var categoryId = "category-" + "{{id}}";
+        var categoryUrl = "{{url}}"; // Assuming each category has a url
+        property // Create a JavaScript object to store both the name and url
+        var categoryData = { name: categoryName, url: categoryUrl }; // Convert
+        the object to a JSON string for storage in localStorage var
+        categoryDataString = JSON.stringify(categoryData); // Store the string
+        in localStorage localStorage.setItem(categoryId, categoryDataString);
+    {{/each}}
 </script>
 
-
-<h1 class="visibility-hidden">{{ help_center.name }}</h1>
+<h1 class="visibility-hidden">{{help_center.name}}</h1>
 
 <section id="main-content" class="section hero">
-  <div class="hero-inner">
-    <h1 class="hero-title">{{ settings.homepage_title }}</h1>
-    <div class="hero-description">{{ settings.homepage_description }}</div>
-    <div class="hero-search">
-      {{search submit=false instant=settings.instant_search class='hero-search-bar' placeholder='Search our knowledge base'}}
-      <div class="hero-search-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" viewBox="0 0 12 12" class="" aria-hidden="true">
-          <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
-          <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
-        </svg>
-      </div>
+    <div class="hero-inner">
+        <h1 class="hero-title">{{settings.homepage_title}}</h1>
+        <div class="hero-description">{{settings.homepage_description}}</div>
+        <div class="hero-search">
+            {{search
+                submit=false
+                instant=settings.instant_search
+                class="hero-search-bar"
+                placeholder="Search our knowledge base"
+            }}
+            <div class="hero-search-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    focusable="false"
+                    viewBox="0 0 12 12"
+                    class=""
+                    aria-hidden="true"
+                >
+                    <circle
+                        cx="4.5"
+                        cy="4.5"
+                        r="4"
+                        fill="none"
+                        stroke="currentColor"
+                    />
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        d="M11 11L7.5 7.5"
+                    />
+                </svg>
+            </div>
+        </div>
+        <div class="popular-searches">
+            {{#if settings.popular_search_1}}
+                <span>
+                    Popular Searches:
+                </span>
+            {{/if}}
+            {{#if settings.popular_search_1}}
+                <a class="popular-search-item">
+                    {{settings.popular_search_1}}
+                </a>
+            {{/if}}
+            {{#if settings.popular_search_2}}
+                <a class="popular-search-item">
+                    {{settings.popular_search_2}}
+                </a>
+            {{/if}}
+            {{#if settings.popular_search_3}}
+                <a class="popular-search-item">
+                    {{settings.popular_search_3}}
+                </a>
+            {{/if}}
+            {{#if settings.popular_search_4}}
+                <a class="popular-search-item">
+                    {{settings.popular_search_4}}
+                </a>
+            {{/if}}
+        </div>
     </div>
-    <div class="popular-searches">
-      {{#if settings.popular_search_1}}
-        <span>
-          Popular Searches:
-        </span>
-      {{/if}}
-      {{#if settings.popular_search_1}}
-        <a class="popular-search-item">
-          {{settings.popular_search_1}}
-        </a>
-      {{/if}}
-      {{#if settings.popular_search_2}}
-        <a class="popular-search-item">
-          {{settings.popular_search_2}}
-        </a>
-      {{/if}}
-      {{#if settings.popular_search_3}}
-        <a class="popular-search-item">
-          {{settings.popular_search_3}}
-        </a>
-      {{/if}}
-      {{#if settings.popular_search_4}}
-        <a class="popular-search-item">
-          {{settings.popular_search_4}}
-        </a>
-      {{/if}}
-    </div>
-  </div>
 </section>
 
 <!-- <div class="container">
@@ -73,196 +87,300 @@
       {{pagination}}
     </section> -->
 <div class="container">
-  <section class="section knowledge-base">
-    <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
-    <section class="categories blocks">
-      <ul class="blocks-list">
-        <li class="blocks-item">
-          <a href='{{settings.a_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.a_box_icon}}" />
-            <span class="blocks-item-title">{{settings.a_box_title}}</span>
-            <span class="blocks-item-description">{{settings.a_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.b_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.b_box_icon}}" />
-            <span class="blocks-item-title">{{settings.b_box_title}}</span>
-            <span class="blocks-item-description">{{settings.b_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.c_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.c_box_icon}}" />
-            <span class="blocks-item-title">{{settings.c_box_title}}</span>
-            <span class="blocks-item-description">{{settings.c_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.d_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.d_box_icon}}" />
-            <span class="blocks-item-title">{{settings.d_box_title}}</span>
-            <span class="blocks-item-description">{{settings.d_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.e_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.e_box_icon}}" />
-            <span class="blocks-item-title">{{settings.e_box_title}}</span>
-            <span class="blocks-item-description">{{settings.e_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.f_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.f_box_icon}}" />
-            <span class="blocks-item-title">{{settings.f_box_title}}</span>
-            <span class="blocks-item-description">{{settings.f_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.g_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.g_box_icon}}" />
-            <span class="blocks-item-title">{{settings.g_box_title}}</span>
-            <span class="blocks-item-description">{{settings.g_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.h_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.h_box_icon}}" />
-            <span class="blocks-item-title">{{settings.h_box_title}}</span>
-            <span class="blocks-item-description">{{settings.h_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.i_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.i_box_icon}}" />
-            <span class="blocks-item-title">{{settings.i_box_title}}</span>
-            <span class="blocks-item-description">{{settings.i_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.j_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.j_box_icon}}" />
-            <span class="blocks-item-title">{{settings.j_box_title}}</span>
-            <span class="blocks-item-description">{{settings.j_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.k_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.k_box_icon}}" />
-            <span class="blocks-item-title">{{settings.k_box_title}}</span>
-            <span class="blocks-item-description">{{settings.k_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.l_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.l_box_icon}}" />
-            <span class="blocks-item-title">{{settings.l_box_title}}</span>
-            <span class="blocks-item-description">{{settings.l_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.m_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.m_box_icon}}" />
-            <span class="blocks-item-title">{{settings.m_box_title}}</span>
-            <span class="blocks-item-description">{{settings.m_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.n_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.n_box_icon}}" />
-            <span class="blocks-item-title">{{settings.n_box_title}}</span>
-            <span class="blocks-item-description">{{settings.n_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.o_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.o_box_icon}}" />
-            <span class="blocks-item-title">{{settings.o_box_title}}</span>
-            <span class="blocks-item-description">{{settings.o_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.p_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.p_box_icon}}" />
-            <span class="blocks-item-title">{{settings.p_box_title}}</span>
-            <span class="blocks-item-description">{{settings.p_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.q_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.q_box_icon}}" />
-            <span class="blocks-item-title">{{settings.q_box_title}}</span>
-            <span class="blocks-item-description">{{settings.q_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.r_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.r_box_icon}}" />
-            <span class="blocks-item-title">{{settings.r_box_title}}</span>
-            <span class="blocks-item-description">{{settings.r_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.s_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.s_box_icon}}" />
-            <span class="blocks-item-title">{{settings.s_box_title}}</span>
-            <span class="blocks-item-description">{{settings.s_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.t_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.t_box_icon}}" />
-            <span class="blocks-item-title">{{settings.t_box_title}}</span>
-            <span class="blocks-item-description">{{settings.t_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.u_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.u_box_icon}}" />
-            <span class="blocks-item-title">{{settings.u_box_title}}</span>
-            <span class="blocks-item-description">{{settings.u_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.v_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.v_box_icon}}" />
-            <span class="blocks-item-title">{{settings.v_box_title}}</span>
-            <span class="blocks-item-description">{{settings.v_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.w_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.w_box_icon}}" />
-            <span class="blocks-item-title">{{settings.w_box_title}}</span>
-            <span class="blocks-item-description">{{settings.w_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.x_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.x_box_icon}}" />
-            <span class="blocks-item-title">{{settings.x_box_title}}</span>
-            <span class="blocks-item-description">{{settings.x_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.y_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.y_box_icon}}" />
-            <span class="blocks-item-title">{{settings.y_box_title}}</span>
-            <span class="blocks-item-description">{{settings.y_box_desc}}</span>
-          </a>
-        </li>
-        <li class="blocks-item">
-          <a href='{{settings.z_box_url}}' class="blocks-item-link">
-            <img class="" src="{{settings.z_box_icon}}" />
-            <span class="blocks-item-title">{{settings.z_box_title}}</span>
-            <span class="blocks-item-description">{{settings.z_box_desc}}</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+    <section class="section knowledge-base">
+        <h2 class="visibility-hidden">{{t "categories"}}</h2>
+        <section class="categories blocks">
+            <ul class="blocks-list">
+                <li class="blocks-item">
+                    <a href="{{settings.a_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.a_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.a_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.a_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.b_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.b_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.b_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.b_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.c_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.c_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.c_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.c_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.d_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.d_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.d_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.d_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.e_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.e_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.e_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.e_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.f_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.f_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.f_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.f_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.g_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.g_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.g_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.g_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.h_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.h_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.h_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.h_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.i_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.i_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.i_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.i_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.j_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.j_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.j_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.j_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.k_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.k_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.k_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.k_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.l_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.l_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.l_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.l_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.m_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.m_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.m_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.m_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.n_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.n_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.n_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.n_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.o_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.o_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.o_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.o_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.p_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.p_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.p_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.p_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.q_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.q_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.q_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.q_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.r_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.r_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.r_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.r_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.s_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.s_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.s_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.s_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.t_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.t_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.t_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.t_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.u_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.u_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.u_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.u_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.v_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.v_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.v_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.v_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.w_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.w_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.w_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.w_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.x_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.x_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.x_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.x_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.y_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.y_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.y_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.y_box_desc}}</span>
+                    </a>
+                </li>
+                <li class="blocks-item">
+                    <a href="{{settings.z_box_url}}" class="blocks-item-link">
+                        <img class="" src="{{settings.z_box_icon}}" />
+                        <span
+                            class="blocks-item-title"
+                        >{{settings.z_box_title}}</span>
+                        <span
+                            class="blocks-item-description"
+                        >{{settings.z_box_desc}}</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
 
-<!--     {{#if promoted_articles}}
+        <!--     {{#if promoted_articles}}
       <section class="articles">
         <div class="articles-section-title">Latest Smartabase Release Notes</div>
         <div class="articles-section-subtitle"><a href="https://smartabase.zendesk.com/hc/en-us/articles/14857974699796">Subscribe to release notes</a></div>
@@ -291,59 +409,79 @@
         </ul>
       </section>
     {{/if}} -->
-  </section>
+    </section>
 </div>
 
 <div class="banner-container">
-  <div class="banner-inner">
-    <div class="banner-logo-line">
-      {{#if settings.show_arms_logo}}
-        <img src="{{settings.arms_logo}}" />
-      {{/if}}
-      {{#if settings.show_trac_logo}}
-        <img src="{{settings.trac_logo}}" />
-      {{/if}}
-      {{#if settings.show_hub_logo}}
-        <img src="{{settings.hub_logo}}" >
-      {{/if}}
-      {{#if settings.show_inflcr_logo}}
-        <img src="{{settings.inflcr_logo}}" >
-      {{/if}}
-      {{#if settings.show_notemeal_logo}}
-        <img src="{{settings.notemeal_logo}}" >
-      {{/if}}
-      {{#if settings.show_pathways_logo}}
-        <img src="{{settings.pathways_logo}}" >
-      {{/if}}
-      {{#if settings.show_retain_logo}}
-        <img src="{{settings.retain_logo}}" >
-      {{/if}}
-      {{#if settings.show_smartabase_logo}}
-        <img src="{{settings.smartabase_logo}}" >
-      {{/if}}
-      {{#if settings.show_whistle_logo}}
-        <img src="{{settings.whistle_logo}}" >
-      {{/if}}
-      {{#if settings.show_pulse_logo}}
-        <img src="{{settings.pulse_logo}}" >
-      {{/if}}
+    <div class="banner-inner">
+        <div class="banner-logo-line">
+            {{#if settings.show_hub_logo}}
+                <img src="{{settings.hub}}" />
+            {{/if}}
+            {{#if settings.show_camps_logo}}
+                <img src="{{settings.camps}}" />
+            {{/if}}
+            {{#if settings.show_im_logo}}
+                <img src="{{settings.inventory_management}}" />
+            {{/if}}
+            {{#if settings.show_nutrition_logo}}
+                <img src="{{settings.nutrition}}" />
+            {{/if}}
+            {{#if settings.show_ams_logo}}
+                <img src="{{settings.ams}}" />
+            {{/if}}
+            {{#if settings.show_recruiting_logo}}
+                <img src="{{settings.recruiting}}" />
+            {{/if}}
+            {{#if settings.show_rcomms_logo}}
+                <img src="{{settings.recruiting_comms}}" />
+            {{/if}}
+            {{#if settings.show_academics_logo}}
+                <img src="{{settings.academics}}" />
+            {{/if}}
+            {{#if settings.show_pathways_logo}}
+                <img src="{{settings.pathways}}" />
+            {{/if}}
+            {{#if settings.show_pulse_logo}}
+                <img src="{{settings.pulse}}" />
+            {{/if}}
+            {{#if settings.show_compliance_logo}}
+                <img src="{{settings.compliance}}" />
+            {{/if}}
+            {{#if settings.show_influencer_logo}}
+                <img src="{{settings.influencer}}" />
+            {{/if}}
+            {{#if settings.show_collectives_logo}}
+                <img src="{{settings.collectives}}" />
+            {{/if}}
+        </div>
+        <h1 class="banner-title">{{settings.banner_title}}</h1>
+        <p class="banner-description">
+            {{settings.banner_description}}
+        </p>
+        <a
+            class="button button-primary banner-button"
+            href={{settings.banner_button_link}}
+        >
+            {{settings.banner_button_text}}
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="22px"
+                viewBox="0 0 24 24"
+                width="22px"
+                fill="{{settings.background_color}}"
+            >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z" />
+            </svg>
+        </a>
     </div>
-    <h1 class="banner-title">{{ settings.banner_title }}</h1>
-    <p class="banner-description">
-      {{ settings.banner_description }}
-    </p>
-    <a class="button button-primary banner-button" href={{ settings.banner_button_link }}>
-      {{ settings.banner_button_text }}
-      <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 24 24" width="22px" fill="{{ settings.background_color }}">
-        <path d="M0 0h24v24H0V0z" fill="none"/>
-        <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/>
-      </svg>
-    </a>
-  </div>
 </div>
 
 <script>
-  var smartabaseWebCategoryIcon = "{{asset 'smartabase_web_category_icon.svg'}}";
-  var smartabaseMobileCategoryIcon = "{{asset 'smartabase_mobile_category_icon.svg'}}";
-  var generalCategoryIcon = "{{asset 'general_category_icon.svg'}}";
+    var smartabaseWebCategoryIcon = "{{asset
+        "smartabase_web_category_icon.svg"
+    }}"; var smartabaseMobileCategoryIcon = "{{asset
+        "smartabase_mobile_category_icon.svg"
+    }}"; var generalCategoryIcon = "{{asset "general_category_icon.svg"}}";
 </script>

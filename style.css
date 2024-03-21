@@ -188,8 +188,8 @@ template {
 }
 
 @font-face {
-  font-family: Barlow;
-  src: url($assets-barlow-regular-ttf);
+  font-family: Manrope;
+  src: url($assets-manrope-regular-ttf);
 }
 
 /***** Base *****/
@@ -5640,6 +5640,12 @@ html[dir='rtl'] .notification-left-aligned {
   z-index: 1000;
 }
 
+.dropdown-menu ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 768px) {
   .dropdown-menu {
     left: 0;
@@ -5699,8 +5705,8 @@ html[dir='rtl'] .notification-left-aligned {
 }
 
 .menuitemlogo img {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   margin-right: 5px;
   align-items: center;
   justify-content: center;
@@ -6189,7 +6195,7 @@ html[dir='rtl'] .notification-left-aligned {
 }
 
 .blocks-item img, .category-page-images, .section-page-images {
-  margin-bottom: 20px;
-  width: 120px;
-  height: 120px;
+  margin: 30px 0;
+  width: 60px;
+  height: 60px;
 }

@@ -11,9 +11,6 @@
           src='{{settings.logo}}'
           alt='{{t 'home_page' name=help_center.name}}'
         /> 
-        {{#if settings.show_brand_name}}
-          <span aria-hidden='true'>{{help_center.name}}</span>
-        {{/if}}
       {{/link}}
       <button class='dropdown-toggle' aria-haspopup='true'>
         <span class='hide-on-mobile'>
@@ -36,71 +33,83 @@
         </span>
       </button>
       <div class='dropdown-menu' role='menu'>
-        <ul>
+        <ol>
           <li>
             <a class="menuitemlogo" href="{{settings.hub_url}}">
-              <img src="{{settings.hub_logo}}" alt="" width="7" height="7">
+              <img src="{{settings.hub}}" alt="" width="35" height="35">
               <span>Hub</span>
             </a>           
           </li>
           <li>
-            <a class="menuitemlogo" href="{{settings.trac_url}}">
-              <img src="{{settings.trac_logo}}" alt="" width="7" height="7">
-              <span>TRAC</span>
+            <a class="menuitemlogo" href="{{settings.camps_url}}">
+              <img src="{{settings.camps}}" alt="" width="35" height="35">
+              <span>Camps</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="{{settings.arms_url}}">
-              <img src="{{settings.arms_logo}}" alt="" width="7" height="7">
-              <span>ARMS</span>
+            <a class="menuitemlogo" href="{{settings.im_url}}">
+              <img src="{{settings.inventory_management}}" alt="" width="35" height="35">
+              <span>Inventory Management</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" id="campsarrow" href="{{settings.arms_camps_url}}">
-              <img src="{{settings.arms_camps_logo}}" alt="" width="3" height="3">
-              <span>ARMS Camps</span>
+            <a class="menuitemlogo" href="{{settings.nutrition_url}}">
+              <img src="{{settings.nutrition}}" alt="" width="35" height="35">
+              <span>Nutrition</span>
+            </a>
+          </li>
+          <li>
+            <a class="menuitemlogo" href="{{settings.ams_url}}">
+              <img src="{{settings.ams}}" alt="" width="35" height="35">
+              <span>AMS</span>
+            </a>
+          </li>
+          <li>
+            <a class="menuitemlogo" href="{{settings.recruiting_url}}">
+              <img src="{{settings.recruiting}}" alt="" width="35" height="35">
+              <span>Recruiting</span>
+            </a>
+          </li>
+          <li>
+            <a class="menuitemlogo" href="{{settings.rcomms_url}}">
+              <img src="{{settings.recruiting_comms}}" alt="" width="35" height="35">
+              <span>Recruiting Comms</span>
+            </a>
+          </li>
+          <li>
+            <a class="menuitemlogo" href="{{settings.academics_url}}">
+              <img src="{{settings.academics}}" alt="" width="35" height="35">
+              <span>Academics</span>
             </a>
           </li>
           <li>
             <a class="menuitemlogo" href="{{settings.pathways_url}}">
-              <img src="{{settings.pathways_logo}}" alt="" width="7" height="7">
+              <img src="{{settings.pathways}}" alt="" width="35" height="35">
               <span>Pathways</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="{{settings.inflcr_url}}">
-              <img src="{{settings.inflcr_logo}}" alt="" width="7" height="7">
-              <span>INFLCR</span>
-            </a>
-          </li>
-          <li>
-            <a class="menuitemlogo" href="{{settings.notemeal_url}}">
-              <img src="{{settings.notemeal_logo}}" alt="" width="7" height="7">
-              <span>Notemeal</span>
-            </a>
-          </li>
-          <li>
             <a class="menuitemlogo" href="{{settings.pulse_url}}">
-              <img src="{{settings.pulse_logo}}" alt="" width="7" height="7">
+              <img src="{{settings.pulse}}" alt="" width="35" height="35">
               <span>Pulse</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="{{settings.retain_url}}">
-              <img src="{{settings.retain_logo}}" alt="" width="7" height="7">
-              <span>Retain</span>
+            <a class="menuitemlogo" href="{{settings.compliance_url}}">
+              <img src="{{settings.compliance}}" alt="" width="35" height="35">
+              <span>Compliance</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="{{settings.whistle_url}}">
-              <img src="{{settings.whistle_logo}}" alt="" width="7" height="7">
-              <span>Whistle</span>
+            <a class="menuitemlogo" href="{{settings.influencer_url}}">
+              <img src="{{settings.influencer}}" alt="" width="35" height="35">
+              <span>Influencer</span>
             </a>
           </li>
           <li>
-            <a class="menuitemlogo" href="{{settings.smartabase_url}}">
-              <img src="{{settings.smartabase_logo}}" alt="" width="7" height="7">
-              <span>Smartabase</span>
+            <a class="menuitemlogo" href="{{settings.collectives_url}}">
+              <img src="{{settings.collectives}}" alt="" width="35" height="35">
+              <span>Collectives</span>
             </a>
           </li>
         </ul>

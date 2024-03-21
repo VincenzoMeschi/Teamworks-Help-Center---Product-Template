@@ -62,55 +62,12 @@ $('.request_custom_fields_5652517816601').hide();
   
   			console.log('Show Web Widget');
 
-        {{#if settings.use_web_widget}}
-          zE('webWidget', 'updateSettings', {
-            webWidget: {
-             contactForm: {
-                suppress: true
-              },
-              helpCenter: {
-                suppress: true
-              },
-              talk: {
-                suppress: true
-              },
-              answerBot: {
-                suppress: true
-              }
-            }
-          });
-          zE('webWidget', 'open');
-        {{else}}
-					zE('messenger', 'open');
-        {{/if}}
+
+				zE('messenger', 'open');
 
   			e.preventDefault();
       });
   	}
-
-    {{#if settings.use_web_widget}}
-  	 zE('webWidget:on', 'close', function() {
-  
-        console.log('The widget has been closed!');
-  
-        zE('webWidget', 'updateSettings', {
-          webWidget: {
-           contactForm: {
-              suppress: false
-            },
-            helpCenter: {
-              suppress: false
-            },
-            talk: {
-              suppress: false
-            },
-            answerBot: {
-              suppress: false
-            }
-          }
-        });
-      });
-    {{/if}}
   
     var form = document.getElementById('main-content');
     if (!form) return;
