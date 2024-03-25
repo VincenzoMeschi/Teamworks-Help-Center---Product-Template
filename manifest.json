@@ -1,7 +1,7 @@
 {
-    "name": "Brand Template 1.8.39",
+    "name": "Brand Template 1.8.41",
     "author": "Vincenzo Meschi",
-    "version": "1.8.40",
+    "version": "1.8.41",
     "api_version": 2,
     "default_locale": "en-us",
     "settings": [
@@ -1014,19 +1014,6 @@
                     "value": "https://pathways.zendesk.com"
                 },
                 {
-                    "identifier": "recruiting",
-                    "type": "file",
-                    "description": "recruiting_logo_description",
-                    "label": "recruiting_logo_label"
-                },
-                {
-                    "identifier": "recruiting_url",
-                    "type": "text",
-                    "description": "recruiting_url_description",
-                    "label": "recruiting_url_label",
-                    "value": "https://inflcr.zendesk.com"
-                },
-                {
                     "identifier": "recruiting_comms",
                     "type": "file",
                     "description": "rcomms_logo_description",
@@ -1267,13 +1254,6 @@
                     "type": "checkbox",
                     "description": "ams_logo_description",
                     "label": "ams_logo_label",
-                    "value": false
-                },
-                {
-                    "identifier": "show_recruiting_logo",
-                    "type": "checkbox",
-                    "description": "recruiting_logo_description",
-                    "label": "recruiting_logo_label",
                     "value": false
                 },
                 {

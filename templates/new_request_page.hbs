@@ -25,8 +25,8 @@ $('.request_custom_fields_5652517816601').hide();
     </span>
   </h1>
 
-  <section class="contact-options blocks hidden">
-    <ul class="blocks-list">
+  {{!-- <section class="contact-options blocks hidden"> --}}
+    {{!-- <ul class="blocks-list">
       <li class="blocks-item group-item new-request">
         <h3 class="group-item__title">{{settings.new_request_tile_title}}</h3>
         <p class="group-item__description">{{settings.new_request_tile_description}}</p>
@@ -45,8 +45,18 @@ $('.request_custom_fields_5652517816601').hide();
           </svg>
         </a>
       </li>
-    </ul>
-  </section>
+    </ul> --}}
+  {{!-- </section> --}}
+
+  <div class="contact-options blocks hidden">
+    <h3 class="group-item__title">{{settings.new_request_tile_title}}</h3>
+    <p class="group-item__description">{{settings.new_request_tile_description}}</p>
+    <a href="mailto:support@teamworks.com">
+      <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.02901 7.27849L8.40674 7.27849L14.582 7.27849L11.6183 10.2422C11.2169 10.6436 11.2169 11.2919 11.6183 11.6933C12.0196 12.0946 12.6679 12.0946 13.0693 11.6933L17.7927 6.96977C18.1941 6.56842 18.1941 5.9201 17.7927 5.51876L13.0693 0.795269C12.6679 0.393928 12.0196 0.393928 11.6183 0.795269C11.2169 1.19661 11.2169 1.84493 11.6183 2.24628L14.582 5.22033L1.02901 5.22033C0.463015 5.22033 -7.43866e-05 5.68341 -7.43866e-05 6.24941C-7.43866e-05 6.8154 0.463015 7.27849 1.02901 7.27849Z" fill="#00C848"/>
+      </svg>
+    </a>
+  </div>
 
   <div id="main-content" class="form contact-form hidden">
     {{request_form wysiwyg=true}}
