@@ -1136,7 +1136,9 @@ input[type='submit'][disabled] {
 
 /***** Footer *****/
 
-footer {
+.footer-container {
+  padding: 0 5%;
+  width: 100%;
   min-height: 446px;
   display: flex;
   flex-direction: row;
@@ -1151,11 +1153,6 @@ footer {
   border-color: #38383E;
   background-color: #000;
   color: #fff;
-}
-
-.footer-container {
-  padding: 0 5%;
-  width: 100%;
 }
 
 .footer-inner {
