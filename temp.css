@@ -1,0 +1,298 @@
+/* 
+Theme Name: Teamworks
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Adapted Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Top Fox Marketing
+Author URI: https://topfoxmarketing.com
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+:root {
+	/*Set 1rem equal 10px*/
+	font-size: 62.5%;
+}
+
+/*Selectors*/
+
+#footer p {
+	font-size: 1.4rem;
+	line-height: 3.3rem;
+}
+
+#footer a {
+	color: #7f8188;
+}
+
+#footer a:hover {
+	color: #fff;
+}
+
+sup {
+	font-size: 50%;
+	top: -10px;
+}
+
+li {
+	padding-bottom: 20px;
+}
+
+#hub .elementor-button {
+	background: none;
+	padding: 0;
+}
+
+/*Classes*/
+
+.pad-side {
+	padding: 0 5%;
+}
+
+.bold-caps {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.elementor-image-box-description {
+	font-size: 1.6rem;
+	padding: 0 15%;
+}
+
+.elementor-icon-box-description {
+	padding: 0 10%;
+}
+
+.primary-button {
+	position: relative;
+}
+
+.primary-button .elementor-button-icon {
+	transition: transform 0.3s ease-in-out;
+}
+
+.primary-button:hover .elementor-button-icon {
+	transform: translateX(5px);
+}
+
+.secondary-button .elementor-button {
+	background-color: #00000000 !important;
+	border: solid 1px #ccc;
+}
+
+.secondary-button .elementor-button:hover {
+	transition: background-color 0.3s ease-in-out;
+	background-color: #38383e !important;
+}
+
+.secondary-button .elementor-button-icon {
+	display: none;
+}
+
+.bento:hover {
+	cursor: pointer;
+}
+
+.bento img {
+	filter: grayscale(100%);
+}
+
+.bento:hover img {
+	filter: grayscale(0%);
+}
+
+.bento .elementor-button {
+	background: none;
+	padding: 0;
+}
+
+.bento:hover .elementor-button .elementor-button-icon {
+	transform: translateX(5px);
+}
+
+.bento:hover .link-arrow i,
+.hubtext:hover .link-arrow i,
+.arrow:hover .link-arrow i {
+	transition: transform 0.3s ease-in-out;
+	transform: translateX(5px);
+}
+
+.clickbox:hover .elementor-button-icon {
+	transform: translateX(5px);
+}
+
+.clickbox:hover .link-arrow i {
+	transition: transform 0.3s ease-in-out;
+	transform: translateX(5px);
+}
+
+.link-arrow {
+	letter-spacing: 0.15rem;
+}
+
+.link-arrow,
+#post-btn {
+	font-size: 1.2rem !important;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: transform 0.3s ease-in-out;
+	transform: translateX(0);
+}
+
+.menu-item img._before {
+	width: 20px;
+}
+
+.title {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #c0c3cc;
+}
+
+.branding {
+	color: #2cc3f2;
+}
+
+.dropshadow {
+	filter: drop-shadow(2px 2px 5px #000000);
+}
+
+.glow {
+	filter: drop-shadow(0px 10px #ffffff);
+}
+
+.date {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: bold;
+	background: #1f1f22;
+	border-radius: 5px;
+	padding: 2px 10px;
+	color: #9899a0;
+}
+
+.wheel {
+	margin-top: -60px;
+	@media screen and (min-width: 1400px) {
+		selector {
+			margin-top: -200px;
+		}
+	}
+}
+
+.elementor-testimonial__image img {
+	height: auto !important;
+	border-radius: 0px !important;
+}
+
+/*Blog Post*/
+.single p {
+	margin-block-end: 3.6rem;
+	line-height: 3.2rem;
+}
+
+.single li {
+	padding-bottom: 5px;
+}
+.single ul {
+	padding-bottom: 20px;
+}
+
+blockquote {
+	color: #01bc9a !important;
+}
+
+.blog img {
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.blog h2,
+.blog h3,
+.blog h4,
+.blog h5,
+.blog h6 {
+	color: #000;
+}
+
+.blog a {
+	color: #1a6aff;
+}
+
+.e-font-icon-svg.e-fab-twitter path {
+	fill: transparent; /* Hide the original Twitter logo */
+}
+
+.e-font-icon-svg.e-fab-twitter {
+	background: url("/wp-content/uploads/x-twitter.svg") center/contain
+		no-repeat;
+	display: inline-block; /* If it's an inline element */
+}
+
+.uc-search-item__link-title {
+	font-size: 1.2rem;
+}
+
+/*Menus*/
+.industry-menu li.current-menu-item,
+.products-menu li.current-menu-item,
+.branding-menu li.current-menu-item,
+.operations-menu li.current-menu-item,
+.athlete-menu li.current-menu-item,
+.performance-menu li.current-menu-item {
+	display: none;
+}
+
+.page-menu .has-submenu {
+	font-weight: bold;
+	letter-spacing: 0.4rem;
+	color: #c0c3cc !important;
+}
+
+.sub-menu li {
+	min-width: 180px;
+}
+
+.e-fas-caret-down,
+.sub-arrow {
+	fill: #fff;
+}
+
+.swiper-slide {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+/*Hovertabs*/
+.hoverTabs .e-n-tabs-content .e-con.e-active {
+	animation: fadeInTabs 0.8s ease forwards;
+}
+@keyframes fadeInTabs {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	/* Styles for mobile devices */
+
+	#hero .secondary-button .elementor-button {
+		min-width: 232px !important;
+		padding: 15px 35px 14px 35px;
+	}
+
+	.herotext {
+		color: #fff !important;
+	}
+}
